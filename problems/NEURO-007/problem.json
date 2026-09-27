@@ -1,0 +1,33 @@
+{
+  "id": "NEURO-007",
+  "domain": "neuroscience",
+  "title": "解碼相關性到因果功能的跨越",
+  "status": "OPEN",
+  "priority": "A",
+  "checked_on": "2026-09-28",
+  "statement": "對高decoding accuracy的neural feature，建立判斷該activity是causal mediator、epiphenomenon還是共同輸入結果的可檢驗程序。",
+  "known_result": "2026 representation框架明確區分information sensitivity/specificity與downstream functionality；model-disagreement方法提供更多diagnostic tests。",
+  "open_gap": "perturbation feasibility、mediator definition、network compensation與off-target effects。",
+  "first_task": "在合成causal network建立decoder-high但noncausal的負例，再測不同intervention predictions。",
+  "evaluator": "causal effect recovery、mediation error、decoder vs intervention discrepancy。",
+  "validation_limits": "高AUC/R²不能單獨支持功能claim；合成成功不代替真實干預。",
+  "completion_criterion": "在明列系統中由pre-registered intervention/自然實驗支持功能性claim，並排除至少一類confound。",
+  "screening_note": "2026-09-28 初始有界文獻篩查；不是完整全網未解證明。每輪必須重查最新論文、資料與修訂。",
+  "screening_queries": [
+    "neural decoding causal representation function 2026"
+  ],
+  "sources": [
+    {
+      "title": "Clarifying the conceptual dimensions of representation in neuroscience",
+      "url": "https://www.nature.com/articles/s41583-026-01030-8",
+      "kind": "perspective",
+      "supports": "downstream functionality與decoding證據的區分"
+    },
+    {
+      "title": "Making models disagree to learn how brains compute",
+      "url": "https://www.nature.com/articles/s41583-026-01070-0",
+      "kind": "review",
+      "supports": "診斷模型差異的實驗設計"
+    }
+  ]
+}

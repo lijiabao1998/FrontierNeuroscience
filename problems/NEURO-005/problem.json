@@ -1,0 +1,27 @@
+{
+  "id": "NEURO-005",
+  "domain": "neuroscience",
+  "title": "Neural manifolds 的跨任務／跨個體穩定性",
+  "status": "OPEN",
+  "priority": "B",
+  "checked_on": "2026-09-28",
+  "statement": "判定低維neural manifold在task、day、animal間哪些幾何是穩定的計算結構，哪些只是alignment/recording方法產物。",
+  "known_result": "近年neural manifold研究把population activity geometry作為跨task與learning的描述工具，但latent alignment與mechanistic interpretation仍是核心挑戰。",
+  "open_gap": "跨個體alignment的非唯一性、dimensionality estimator、drift與task-induced remapping。",
+  "first_task": "用synthetic latent dynamics + rotated/noisy observation建立已知真值，測PCA/CCA/alignment方法能否恢復。",
+  "evaluator": "subspace angles、latent prediction、cross-session decoding、null rotations。",
+  "validation_limits": "跨session可align不代表同一神經元機制不變。",
+  "completion_criterion": "在held-out task/session中由預先學得幾何做成功預測，並通過alignment null tests。",
+  "screening_note": "2026-09-28 初始有界文獻篩查；不是完整全網未解證明。每輪必須重查最新論文、資料與修訂。",
+  "screening_queries": [
+    "neural manifold neuroscience 2025 2026"
+  ],
+  "sources": [
+    {
+      "title": "A neural manifold view of memory and behaviour",
+      "url": "https://www.nature.com/articles/s41593-025-02031-z",
+      "kind": "review",
+      "supports": "neural manifold在認知/行為中的框架與問題"
+    }
+  ]
+}

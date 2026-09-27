@@ -1,0 +1,27 @@
+{
+  "id": "NEURO-008",
+  "domain": "neuroscience",
+  "title": "Speech → language BCI 的概念層泛化",
+  "status": "OPEN",
+  "priority": "B",
+  "checked_on": "2026-09-28",
+  "statement": "從motor speech decoding進一步評估concept/linguistic representation decoding能否跨詞彙、語境與session泛化，並控制語言模型先驗。",
+  "known_result": "2026 Nature Reviews Bioengineering指出下一代communication neuroprostheses可能從speech BCI走向language/concept decoding，但涉及更高階representations與更廣適用人群。",
+  "open_gap": "concept ground truth、language-model leakage、privacy與跨session calibration。",
+  "first_task": "僅用公開去識別資料做offline benchmark；比較neural-only、LM-only與combined model，做semantic-held-out split。",
+  "evaluator": "semantic generalization、calibration、LM-only baseline、session transfer。",
+  "validation_limits": "語言模型能猜出內容不等於神經信號含該概念；不做個人mind-reading宣稱。",
+  "completion_criterion": "held-out concepts/contexts上有超越LM-only的可重現neural增益，並有清楚不確定性。",
+  "screening_note": "2026-09-28 初始有界文獻篩查；不是完整全網未解證明。每輪必須重查最新論文、資料與修訂。",
+  "screening_queries": [
+    "speech to language brain computer interfaces 2026"
+  ],
+  "sources": [
+    {
+      "title": "Transitioning from speech to language brain–computer interfaces",
+      "url": "https://www.nature.com/articles/s44222-026-00460-4",
+      "kind": "perspective",
+      "supports": "speech BCI走向language/concept BCI的研究方向"
+    }
+  ]
+}

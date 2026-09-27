@@ -1,0 +1,27 @@
+{
+  "id": "NEURO-009",
+  "domain": "neuroscience",
+  "title": "Neural subspaces 的可組合認知機制",
+  "status": "OPEN",
+  "priority": "B",
+  "checked_on": "2026-09-28",
+  "statement": "判定不同task variables是否在可重用、可組合neural subspaces中表示，並能預測新task composition。",
+  "known_result": "2026 Nature Reviews Neuroscience提出以neural subspaces理解compositional cognition，重點在可重用低維結構與task composition。",
+  "open_gap": "subspace identifiability、orthogonality是否分析產物、跨task因果可用性。",
+  "first_task": "用synthetic compositional RNN和公開population data比較shared-subspace vs task-specific baseline。",
+  "evaluator": "cross-task transfer、subspace overlap、held-out composition prediction。",
+  "validation_limits": "線性可分解不自動等於brain實際composition mechanism。",
+  "completion_criterion": "在未見task combinations上由先前subspaces成功預測neural/behaviour patterns。",
+  "screening_note": "2026-09-28 初始有界文獻篩查；不是完整全網未解證明。每輪必須重查最新論文、資料與修訂。",
+  "screening_queries": [
+    "composing cognition neural subspaces 2026"
+  ],
+  "sources": [
+    {
+      "title": "Composing cognition via neural subspaces",
+      "url": "https://www.nature.com/articles/s41583-025-01018-w",
+      "kind": "review",
+      "supports": "neural subspaces與compositional cognition"
+    }
+  ]
+}

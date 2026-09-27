@@ -1,0 +1,27 @@
+{
+  "id": "NEURO-001",
+  "domain": "neuroscience",
+  "title": "用模型分歧設計可區分腦計算假說的刺激",
+  "status": "OPEN",
+  "priority": "A",
+  "checked_on": "2026-09-28",
+  "statement": "對多個都能擬合同分布神經／行為資料的高容量模型，能否主動找到讓模型預測最大分歧的刺激，並在新資料中有效區分機制。",
+  "known_result": "2026 Nature Reviews Neuroscience提出以model-disagreement stimuli與adversarial testing提升神經計算假說可區分性，因高容量模型在一般刺激上常產生近似預測。",
+  "open_gap": "分歧刺激是否能跨模型架構、subject與dataset重現，以及最大分歧是否真的對應機制差異而非模型漏洞。",
+  "first_task": "用公開小資料與兩個簡單視覺/行為模型，先重現普通stimuli下的相似度，再算法生成/挑選分歧stimuli並hold out驗證。",
+  "evaluator": "held-out likelihood/behavioral fit、model discrimination accuracy、stimulus naturalness與跨subject一致性。",
+  "validation_limits": "找到adversarial failure不等於腦採用另一模型；模型族不完整可能讓二選一都錯。",
+  "completion_criterion": "在預註冊模型族與held-out subjects/stimuli上，分歧刺激穩定提高可區分性，並能排除至少一個明確假說。",
+  "screening_note": "2026-09-28 初始有界文獻篩查；不是完整全網未解證明。每輪必須重查最新論文、資料與修訂。",
+  "screening_queries": [
+    "making models disagree neuroscience 2026"
+  ],
+  "sources": [
+    {
+      "title": "Making models disagree to learn how brains compute",
+      "url": "https://www.nature.com/articles/s41583-026-01070-0",
+      "kind": "review",
+      "supports": "模型分歧、診斷刺激與機制可區分性"
+    }
+  ]
+}

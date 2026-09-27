@@ -1,0 +1,27 @@
+{
+  "id": "NEURO-003",
+  "domain": "neuroscience",
+  "title": "Neural timescales 與計算功能的機制連結",
+  "status": "OPEN",
+  "priority": "B",
+  "checked_on": "2026-09-28",
+  "statement": "區分觀察到的多重neural timescales是由網路動力、輸入統計、task demand或分析方法產生，並建立可檢驗功能預測。",
+  "known_result": "2026 Nature Neuroscience review整理intrinsic、activity與information timescales及可能computational roles。",
+  "open_gap": "timescale estimator dependence、state/task dependence、跨區域因果方向與功能必要性。",
+  "first_task": "用合成RNN與公開timeseries測三種timescale estimator的偏差，故意改input autocorrelation作負控制。",
+  "evaluator": "estimator bias、recovery of known time constants、task generalization、uncertainty。",
+  "validation_limits": "長autocorrelation不自動等於intrinsic neural timescale。",
+  "completion_criterion": "在至少兩種資料／擾動條件下分離input與network contributions，並預測held-out task dynamics。",
+  "screening_note": "2026-09-28 初始有界文獻篩查；不是完整全網未解證明。每輪必須重查最新論文、資料與修訂。",
+  "screening_queries": [
+    "neural timescales computational perspective 2026"
+  ],
+  "sources": [
+    {
+      "title": "Neural timescales from a computational perspective",
+      "url": "https://www.nature.com/articles/s41593-026-02343-8",
+      "kind": "review",
+      "supports": "neural timescale definitions、computational roles與未解機制"
+    }
+  ]
+}

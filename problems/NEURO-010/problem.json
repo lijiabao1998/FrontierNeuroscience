@@ -1,0 +1,27 @@
+{
+  "id": "NEURO-010",
+  "domain": "neuroscience",
+  "title": "低功耗 neuromorphic BCI 的閉環魯棒性",
+  "status": "OPEN",
+  "priority": "B",
+  "checked_on": "2026-09-28",
+  "statement": "評估neuromorphic/event-driven BCI在功耗、latency、accuracy、drift與closed-loop stability間的trade-off，尤其跨session/subject。",
+  "known_result": "2026 npj Biomedical Innovations review整理neuromorphic computing與BCI整合的低功耗、實時潛力及技術挑戰。",
+  "open_gap": "hardware variability、online adaptation、concept drift與closed-loop human factors。",
+  "first_task": "先做公開offline signal重播；同decoder比較standard vs event-driven approximate implementation的latency/energy proxy/accuracy。",
+  "evaluator": "accuracy、calibration、latency、energy proxy、drift robustness。",
+  "validation_limits": "offline replay不是臨床closed loop；energy proxy需硬體驗證。",
+  "completion_criterion": "在held-out sessions維持性能與資源優勢，真實closed-loop claim需合資格實驗獨立驗證。",
+  "screening_note": "2026-09-28 初始有界文獻篩查；不是完整全網未解證明。每輪必須重查最新論文、資料與修訂。",
+  "screening_queries": [
+    "neuromorphic BCI 2026 review"
+  ],
+  "sources": [
+    {
+      "title": "Towards neuromorphic neurotechnologies: integrating brain-inspired computing with brain-computer interfaces",
+      "url": "https://www.nature.com/articles/s44385-026-00074-w",
+      "kind": "review",
+      "supports": "neuromorphic BCI的機會與工程挑戰"
+    }
+  ]
+}

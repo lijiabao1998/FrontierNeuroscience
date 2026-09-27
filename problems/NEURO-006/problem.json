@@ -1,0 +1,27 @@
+{
+  "id": "NEURO-006",
+  "domain": "neuroscience",
+  "title": "Memory engram 的神經元—膠質協同機制",
+  "status": "OPEN",
+  "priority": "C",
+  "checked_on": "2026-09-28",
+  "statement": "研究記憶痕跡是否需要把astrocytes等非神經元細胞納入engram定義，以及它們對encoding/consolidation/retrieval的因果角色。",
+  "known_result": "2026 Nature Reviews Neuroscience提出astroengrams概念並整理astrocytic plasticity、memory與network interaction證據。",
+  "open_gap": "細胞型因果時序、跨記憶類型泛化、觀察marker與功能必要性的區分。",
+  "first_task": "先做文獻data-map：每個claim按observational/perturbational、cell type、memory phase編碼；不自行設計動物實驗。",
+  "evaluator": "evidence graph completeness、conflict mapping、prediction table；公開資料若可用再做secondary analysis。",
+  "validation_limits": "expression/activity marker不等於engram必要性；本repo不執行動物刺激。",
+  "completion_criterion": "對限定memory paradigm形成能被獨立干預研究驗證的機制預測；廣泛engram定義保留。",
+  "screening_note": "2026-09-28 初始有界文獻篩查；不是完整全網未解證明。每輪必須重查最新論文、資料與修訂。",
+  "screening_queries": [
+    "astroengrams memory neuroscience 2026"
+  ],
+  "sources": [
+    {
+      "title": "Astroengrams: glial contributions to memory traces",
+      "url": "https://www.nature.com/articles/s41583-025-01012-2",
+      "kind": "review",
+      "supports": "astrocytes與memory engram的前沿框架"
+    }
+  ]
+}

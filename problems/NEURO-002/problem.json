@@ -1,0 +1,27 @@
+{
+  "id": "NEURO-002",
+  "domain": "neuroscience",
+  "title": "Joint brain–behaviour dynamical models 的跨情境泛化",
+  "status": "OPEN",
+  "priority": "A",
+  "checked_on": "2026-09-28",
+  "statement": "建立能同時預測神經活動與行為動態、並在未見session/task/animal上保持可靠的joint model。",
+  "known_result": "2026 Nature Reviews Neuroscience總結 discriminative、generative、contrastive joint modelling，並強調trustworthiness與interpretability仍需進一步發展。",
+  "open_gap": "跨session/individual generalization、latent identifiability、behaviour annotation bias與model interpretability。",
+  "first_task": "選一個公開neural+behaviour dataset，以session-held-out比較neural-only、behaviour-only與joint baseline。",
+  "evaluator": "held-out neural likelihood、behaviour prediction、latent stability、calibration與session transfer。",
+  "validation_limits": "共享latent能預測不代表生物上唯一狀態變量。",
+  "completion_criterion": "在跨subject/task held-out上同時改善兩種模態，且latent claim有獨立診斷或perturbation支持。",
+  "screening_note": "2026-09-28 初始有界文獻篩查；不是完整全網未解證明。每輪必須重查最新論文、資料與修訂。",
+  "screening_queries": [
+    "joint modelling brain behaviour dynamics AI 2026"
+  ],
+  "sources": [
+    {
+      "title": "Joint modelling of brain and behaviour dynamics with artificial intelligence",
+      "url": "https://www.nature.com/articles/s41583-025-00996-1",
+      "kind": "review",
+      "supports": "joint neural-behaviour models與未來方法缺口"
+    }
+  ]
+}

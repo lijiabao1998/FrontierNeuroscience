@@ -1,0 +1,27 @@
+{
+  "id": "NEURO-004",
+  "domain": "neuroscience",
+  "title": "Neural representation 的可操作定義與證據層級",
+  "status": "OPEN",
+  "priority": "A",
+  "checked_on": "2026-09-28",
+  "statement": "建立可重現流程，分開測量神經反應對feature的sensitivity、specificity、invariance與downstream functionality，而不以任一decoder分數替代全部representation claim。",
+  "known_result": "2026 Nature Reviews Neuroscience提出這四個概念維度並說明常用encoding/decoding/RSA測量各支持哪些證據。",
+  "open_gap": "如何在真實data中區分correlation、information availability與functional use。",
+  "first_task": "用合成資料建立四種維度可獨立變化的case，驗證常用decoder/RSA是否會混淆。",
+  "evaluator": "ground-truth recovery、false positive across dimensions、intervention prediction。",
+  "validation_limits": "可被decoder讀出不表示下游腦區實際使用。",
+  "completion_criterion": "形成跨分析方法一致、能被獨立研究者重現的claim mapping，並對功能性claim要求干預或等價證據。",
+  "screening_note": "2026-09-28 初始有界文獻篩查；不是完整全網未解證明。每輪必須重查最新論文、資料與修訂。",
+  "screening_queries": [
+    "conceptual dimensions representation neuroscience 2026"
+  ],
+  "sources": [
+    {
+      "title": "Clarifying the conceptual dimensions of representation in neuroscience",
+      "url": "https://www.nature.com/articles/s41583-026-01030-8",
+      "kind": "perspective",
+      "supports": "representation的sensitivity/specificity/invariance/functionality框架"
+    }
+  ]
+}
