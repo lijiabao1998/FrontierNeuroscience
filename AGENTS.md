@@ -1,6 +1,6 @@
 # FrontierNeuroscience agent 入口
 
-先讀 README、STATUS、VALIDATION 與治理 f40beb161b6c87201d8082ecbc29c7e0b3eaa402。所有 agent 用 <agent>/NEURO-xxx-<topic> 分支，不直接 main、不自合。
+先讀 README、STATUS、VALIDATION 與治理 9c3ae2dbaa1c814f3ef451c041dedfe3b77d926f。所有 agent 用 <agent>/NEURO-xxx-<topic> 分支，不直接 main、不自合。
 
 每輪 start → 本輪 fresh search → 凍結 subject/session/stimulus split、主要假說與 evaluator → admit → baseline → exploration → verifier/skeptic → PR。
 
