@@ -1,0 +1,4 @@
+  File "/workspace/shared/frontier-neuro-independent/oracle.py", line 89
+    recovery = None if truth=='C' else float(sum((h*(Q(1,2) if a==Q(1,2) else int((a>Q(1,2))==(truth=='A'))) for h,a in zip(hist,post)))/1000
+                                            ^
+SyntaxError: '(' was never closed

@@ -1,0 +1,17 @@
+{
+  "problems/NEURO-001/experiments/synthetic_disagreement/baseline.py": "01e492d41322b4983526635012613dc039d402f005b704eefaf5a03ecc1e02aa",
+  "problems/NEURO-001/experiments/synthetic_disagreement/protocol.json": "6cd7879947d13de6c7b92b0e91974769157dfbddcef844ed21d8e03a0cac9bfa",
+  "problems/NEURO-001/results/synthetic_disagreement/REPORT.md": "f6edea6e20b370c970ba82218a0873fbedb2a5914ed4c18c464de8a86aba8e7c",
+  "problems/NEURO-001/results/synthetic_disagreement/independent/MANIFEST.json": "e5764172d83315470e4d01fce00214797f812a7281de9322c4d4ee3229997653",
+  "problems/NEURO-001/results/synthetic_disagreement/independent/VERIFICATION.md": "a740e72d64dcda834181ee10f99952188c7c07397948e3fd83402257ea87bc5b",
+  "problems/NEURO-001/results/synthetic_disagreement/independent/attempt_01_syntax_error.stdout.txt": "bc954ffa56fa2129ddd45e2334b3c091fa96729ceeb7e0c2a456fa4d557f987a",
+  "problems/NEURO-001/results/synthetic_disagreement/independent/compare.py": "799965df2ea9df53c2adb6d28eb5826c787fe449542dae9db29193e9a7085bed",
+  "problems/NEURO-001/results/synthetic_disagreement/independent/compare.stdout.txt": "06f834daba8d48e62396dbf95f3bb93e73cf2132d95423bc3326af62b76dbae1",
+  "problems/NEURO-001/results/synthetic_disagreement/independent/comparison.json": "6b9b0df8904a949cd295fa93c8d89d26931ea7f37e89a5607afcdd570ed6f8ea",
+  "problems/NEURO-001/results/synthetic_disagreement/independent/oracle.py": "a1d81a0414d7e6e07abb7e629409c8eff036d1f369b70bf6fcc28b34ad036065",
+  "problems/NEURO-001/results/synthetic_disagreement/independent/oracle.stdout.txt": "87f3459f5a5a9f5958bab10efa509cd91f3930e76583a9eed30d3ca5f865228a",
+  "problems/NEURO-001/results/synthetic_disagreement/independent/oracle_exact.stdout.txt": "4e489aa87efaa087c9929d5d0133ea658c9245f4fd08cfede008c8b865aa26bb",
+  "problems/NEURO-001/results/synthetic_disagreement/independent/oracle_exact_results.json": "fea5217b3432231a5f9dd5e8ffef37a37c8877820aa892b037c4cffd9d5ef09b",
+  "problems/NEURO-001/results/synthetic_disagreement/independent/oracle_results.json": "ea1dc73f5427ac4485efe5306a66524e99c75f2132b42672289636231cf52dfd",
+  "problems/NEURO-001/results/synthetic_disagreement/results.json": "4cf9f92ad5d522fc9319d37aad7c345f793416ce7089c9f03073777547cb042e"
+}

@@ -1,0 +1,49 @@
+{
+  "created_at": "2026-10-09T22:33:30.271057+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "full_frozen_acceptance": "FAILED / INCOMPLETE",
+  "numeric_reproduction": "PASS",
+  "files": {
+    "VERIFICATION.md": {
+      "sha256": "a740e72d64dcda834181ee10f99952188c7c07397948e3fd83402257ea87bc5b",
+      "bytes": 9660
+    },
+    "attempt_01_syntax_error.stdout.txt": {
+      "sha256": "bc954ffa56fa2129ddd45e2334b3c091fa96729ceeb7e0c2a456fa4d557f987a",
+      "bytes": 295
+    },
+    "compare.py": {
+      "sha256": "799965df2ea9df53c2adb6d28eb5826c787fe449542dae9db29193e9a7085bed",
+      "bytes": 10192
+    },
+    "compare.stdout.txt": {
+      "sha256": "06f834daba8d48e62396dbf95f3bb93e73cf2132d95423bc3326af62b76dbae1",
+      "bytes": 1234
+    },
+    "comparison.json": {
+      "sha256": "6b9b0df8904a949cd295fa93c8d89d26931ea7f37e89a5607afcdd570ed6f8ea",
+      "bytes": 6200
+    },
+    "oracle.py": {
+      "sha256": "a1d81a0414d7e6e07abb7e629409c8eff036d1f369b70bf6fcc28b34ad036065",
+      "bytes": 9114
+    },
+    "oracle.stdout.txt": {
+      "sha256": "87f3459f5a5a9f5958bab10efa509cd91f3930e76583a9eed30d3ca5f865228a",
+      "bytes": 667
+    },
+    "oracle_exact.stdout.txt": {
+      "sha256": "4e489aa87efaa087c9929d5d0133ea658c9245f4fd08cfede008c8b865aa26bb",
+      "bytes": 664
+    },
+    "oracle_exact_results.json": {
+      "sha256": "fea5217b3432231a5f9dd5e8ffef37a37c8877820aa892b037c4cffd9d5ef09b",
+      "bytes": 14775
+    },
+    "oracle_results.json": {
+      "sha256": "ea1dc73f5427ac4485efe5306a66524e99c75f2132b42672289636231cf52dfd",
+      "bytes": 41049
+    }
+  }
+}

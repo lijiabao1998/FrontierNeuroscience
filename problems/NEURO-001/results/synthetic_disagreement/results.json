@@ -1,0 +1,1355 @@
+{
+  "protocol_sha256": "6cd7879947d13de6c7b92b0e91974769157dfbddcef844ed21d8e03a0cac9bfa",
+  "selected_x": "-1",
+  "grid": [
+    {
+      "x": "-1",
+      "eig1": 0.18872187554086717
+    },
+    {
+      "x": "-3/4",
+      "eig1": 0.10396176746544261
+    },
+    {
+      "x": "-1/2",
+      "eig1": 0.04556599707503495
+    },
+    {
+      "x": "-1/4",
+      "eig1": 0.01130059171150255
+    },
+    {
+      "x": "0",
+      "eig1": 0.0
+    },
+    {
+      "x": "1/4",
+      "eig1": 0.0
+    },
+    {
+      "x": "1/2",
+      "eig1": 0.0
+    },
+    {
+      "x": "3/4",
+      "eig1": 0.0
+    },
+    {
+      "x": "1",
+      "eig1": 0.0
+    }
+  ],
+  "configurations": 60,
+  "designs": [
+    {
+      "name": "ordinary",
+      "x": "1/2",
+      "pA": "5/8",
+      "pB": "5/8",
+      "eig8": 0.0,
+      "truths": {
+        "A": {
+          "recovery_fraction": "1/2",
+          "recovery": 0.5,
+          "mean_posterior_A": 0.5,
+          "high_confidence": 0.0,
+          "high_confidence_fraction": "0",
+          "binomial_mass": [
+            "6561/16777216",
+            "10935/2097152",
+            "127575/4194304",
+            "212625/2097152",
+            "1771875/8388608",
+            "590625/2097152",
+            "984375/4194304",
+            "234375/2097152",
+            "390625/16777216"
+          ]
+        },
+        "B": {
+          "recovery_fraction": "1/2",
+          "recovery": 0.5,
+          "mean_posterior_A": 0.5,
+          "high_confidence": 0.0,
+          "high_confidence_fraction": "0",
+          "binomial_mass": [
+            "6561/16777216",
+            "10935/2097152",
+            "127575/4194304",
+            "212625/2097152",
+            "1771875/8388608",
+            "590625/2097152",
+            "984375/4194304",
+            "234375/2097152",
+            "390625/16777216"
+          ]
+        },
+        "C": {
+          "recovery_fraction": null,
+          "recovery": null,
+          "mean_posterior_A": 0.5,
+          "high_confidence": 0.0,
+          "high_confidence_fraction": "0",
+          "binomial_mass": [
+            "1/256",
+            "1/32",
+            "7/64",
+            "7/32",
+            "35/128",
+            "7/32",
+            "7/64",
+            "1/32",
+            "1/256"
+          ]
+        }
+      },
+      "equal_prior_recovery": 0.5
+    },
+    {
+      "name": "diagnostic",
+      "x": "-1",
+      "pA": "1/4",
+      "pB": "3/4",
+      "eig8": 0.7710929067550158,
+      "truths": {
+        "A": {
+          "recovery_fraction": "3807/4096",
+          "recovery": 0.929443359375,
+          "mean_posterior_A": 0.9068544372508728,
+          "high_confidence": 0.682769775390625,
+          "high_confidence_fraction": "22373/32768",
+          "binomial_mass": [
+            "6561/65536",
+            "2187/8192",
+            "5103/16384",
+            "1701/8192",
+            "2835/32768",
+            "189/8192",
+            "63/16384",
+            "3/8192",
+            "1/65536"
+          ]
+        },
+        "B": {
+          "recovery_fraction": "3807/4096",
+          "recovery": 0.929443359375,
+          "mean_posterior_A": 0.09314556274912722,
+          "high_confidence": 0.682769775390625,
+          "high_confidence_fraction": "22373/32768",
+          "binomial_mass": [
+            "1/65536",
+            "3/8192",
+            "63/16384",
+            "189/8192",
+            "2835/32768",
+            "1701/8192",
+            "5103/16384",
+            "2187/8192",
+            "6561/65536"
+          ]
+        },
+        "C": {
+          "recovery_fraction": null,
+          "recovery": null,
+          "mean_posterior_A": 0.5,
+          "high_confidence": 0.2890625,
+          "high_confidence_fraction": "37/128",
+          "binomial_mass": [
+            "1/256",
+            "1/32",
+            "7/64",
+            "7/32",
+            "35/128",
+            "7/32",
+            "7/64",
+            "1/32",
+            "1/256"
+          ]
+        }
+      },
+      "equal_prior_recovery": 0.929443359375
+    }
+  ],
+  "mc": [
+    {
+      "design": "ordinary",
+      "truth": "A",
+      "seed": 10000,
+      "histogram": [
+        0,
+        6,
+        34,
+        111,
+        220,
+        264,
+        232,
+        110,
+        23
+      ],
+      "recovery": 0.5,
+      "high_confidence": 0.0
+    },
+    {
+      "design": "ordinary",
+      "truth": "A",
+      "seed": 10001,
+      "histogram": [
+        1,
+        4,
+        31,
+        114,
+        208,
+        272,
+        234,
+        117,
+        19
+      ],
+      "recovery": 0.5,
+      "high_confidence": 0.0
+    },
+    {
+      "design": "ordinary",
+      "truth": "A",
+      "seed": 10002,
+      "histogram": [
+        0,
+        3,
+        25,
+        92,
+        219,
+        303,
+        236,
+        100,
+        22
+      ],
+      "recovery": 0.5,
+      "high_confidence": 0.0
+    },
+    {
+      "design": "ordinary",
+      "truth": "A",
+      "seed": 10003,
+      "histogram": [
+        1,
+        4,
+        23,
+        112,
+        197,
+        270,
+        256,
+        116,
+        21
+      ],
+      "recovery": 0.5,
+      "high_confidence": 0.0
+    },
+    {
+      "design": "ordinary",
+      "truth": "A",
+      "seed": 10004,
+      "histogram": [
+        0,
+        5,
+        54,
+        106,
+        185,
+        306,
+        206,
+        110,
+        28
+      ],
+      "recovery": 0.5,
+      "high_confidence": 0.0
+    },
+    {
+      "design": "ordinary",
+      "truth": "A",
+      "seed": 10005,
+      "histogram": [
+        0,
+        5,
+        27,
+        104,
+        220,
+        283,
+        230,
+        105,
+        26
+      ],
+      "recovery": 0.5,
+      "high_confidence": 0.0
+    },
+    {
+      "design": "ordinary",
+      "truth": "A",
+      "seed": 10006,
+      "histogram": [
+        1,
+        5,
+        28,
+        94,
+        198,
+        279,
+        249,
+        118,
+        28
+      ],
+      "recovery": 0.5,
+      "high_confidence": 0.0
+    },
+    {
+      "design": "ordinary",
+      "truth": "A",
+      "seed": 10007,
+      "histogram": [
+        0,
+        1,
+        40,
+        103,
+        205,
+        292,
+        242,
+        96,
+        21
+      ],
+      "recovery": 0.5,
+      "high_confidence": 0.0
+    },
+    {
+      "design": "ordinary",
+      "truth": "A",
+      "seed": 10008,
+      "histogram": [
+        0,
+        4,
+        23,
+        108,
+        193,
+        289,
+        254,
+        110,
+        19
+      ],
+      "recovery": 0.5,
+      "high_confidence": 0.0
+    },
+    {
+      "design": "ordinary",
+      "truth": "A",
+      "seed": 10009,
+      "histogram": [
+        0,
+        8,
+        31,
+        119,
+        196,
+        276,
+        233,
+        117,
+        20
+      ],
+      "recovery": 0.5,
+      "high_confidence": 0.0
+    },
+    {
+      "design": "ordinary",
+      "truth": "B",
+      "seed": 10010,
+      "histogram": [
+        1,
+        3,
+        36,
+        102,
+        205,
+        262,
+        241,
+        122,
+        28
+      ],
+      "recovery": 0.5,
+      "high_confidence": 0.0
+    },
+    {
+      "design": "ordinary",
+      "truth": "B",
+      "seed": 10011,
+      "histogram": [
+        3,
+        3,
+        23,
+        107,
+        216,
+        283,
+        219,
+        122,
+        24
+      ],
+      "recovery": 0.5,
+      "high_confidence": 0.0
+    },
+    {
+      "design": "ordinary",
+      "truth": "B",
+      "seed": 10012,
+      "histogram": [
+        0,
+        5,
+        22,
+        107,
+        231,
+        265,
+        220,
+        127,
+        23
+      ],
+      "recovery": 0.5,
+      "high_confidence": 0.0
+    },
+    {
+      "design": "ordinary",
+      "truth": "B",
+      "seed": 10013,
+      "histogram": [
+        0,
+        4,
+        35,
+        102,
+        190,
+        296,
+        245,
+        105,
+        23
+      ],
+      "recovery": 0.5,
+      "high_confidence": 0.0
+    },
+    {
+      "design": "ordinary",
+      "truth": "B",
+      "seed": 10014,
+      "histogram": [
+        0,
+        3,
+        26,
+        101,
+        202,
+        251,
+        267,
+        120,
+        30
+      ],
+      "recovery": 0.5,
+      "high_confidence": 0.0
+    },
+    {
+      "design": "ordinary",
+      "truth": "B",
+      "seed": 10015,
+      "histogram": [
+        1,
+        4,
+        27,
+        113,
+        184,
+        292,
+        243,
+        114,
+        22
+      ],
+      "recovery": 0.5,
+      "high_confidence": 0.0
+    },
+    {
+      "design": "ordinary",
+      "truth": "B",
+      "seed": 10016,
+      "histogram": [
+        2,
+        2,
+        35,
+        115,
+        196,
+        264,
+        247,
+        120,
+        19
+      ],
+      "recovery": 0.5,
+      "high_confidence": 0.0
+    },
+    {
+      "design": "ordinary",
+      "truth": "B",
+      "seed": 10017,
+      "histogram": [
+        0,
+        3,
+        33,
+        118,
+        206,
+        259,
+        242,
+        122,
+        17
+      ],
+      "recovery": 0.5,
+      "high_confidence": 0.0
+    },
+    {
+      "design": "ordinary",
+      "truth": "B",
+      "seed": 10018,
+      "histogram": [
+        0,
+        3,
+        16,
+        91,
+        229,
+        281,
+        240,
+        120,
+        20
+      ],
+      "recovery": 0.5,
+      "high_confidence": 0.0
+    },
+    {
+      "design": "ordinary",
+      "truth": "B",
+      "seed": 10019,
+      "histogram": [
+        0,
+        5,
+        27,
+        100,
+        206,
+        306,
+        223,
+        109,
+        24
+      ],
+      "recovery": 0.5,
+      "high_confidence": 0.0
+    },
+    {
+      "design": "ordinary",
+      "truth": "C",
+      "seed": 10020,
+      "histogram": [
+        4,
+        18,
+        99,
+        222,
+        292,
+        218,
+        109,
+        31,
+        7
+      ],
+      "recovery": null,
+      "high_confidence": 0.0
+    },
+    {
+      "design": "ordinary",
+      "truth": "C",
+      "seed": 10021,
+      "histogram": [
+        2,
+        22,
+        109,
+        213,
+        274,
+        214,
+        130,
+        31,
+        5
+      ],
+      "recovery": null,
+      "high_confidence": 0.0
+    },
+    {
+      "design": "ordinary",
+      "truth": "C",
+      "seed": 10022,
+      "histogram": [
+        1,
+        30,
+        115,
+        222,
+        268,
+        211,
+        116,
+        35,
+        2
+      ],
+      "recovery": null,
+      "high_confidence": 0.0
+    },
+    {
+      "design": "ordinary",
+      "truth": "C",
+      "seed": 10023,
+      "histogram": [
+        4,
+        27,
+        99,
+        223,
+        261,
+        219,
+        117,
+        47,
+        3
+      ],
+      "recovery": null,
+      "high_confidence": 0.0
+    },
+    {
+      "design": "ordinary",
+      "truth": "C",
+      "seed": 10024,
+      "histogram": [
+        3,
+        37,
+        110,
+        206,
+        270,
+        229,
+        110,
+        29,
+        6
+      ],
+      "recovery": null,
+      "high_confidence": 0.0
+    },
+    {
+      "design": "ordinary",
+      "truth": "C",
+      "seed": 10025,
+      "histogram": [
+        4,
+        27,
+        102,
+        228,
+        286,
+        209,
+        115,
+        26,
+        3
+      ],
+      "recovery": null,
+      "high_confidence": 0.0
+    },
+    {
+      "design": "ordinary",
+      "truth": "C",
+      "seed": 10026,
+      "histogram": [
+        2,
+        21,
+        137,
+        205,
+        274,
+        229,
+        97,
+        31,
+        4
+      ],
+      "recovery": null,
+      "high_confidence": 0.0
+    },
+    {
+      "design": "ordinary",
+      "truth": "C",
+      "seed": 10027,
+      "histogram": [
+        3,
+        35,
+        103,
+        239,
+        273,
+        214,
+        104,
+        27,
+        2
+      ],
+      "recovery": null,
+      "high_confidence": 0.0
+    },
+    {
+      "design": "ordinary",
+      "truth": "C",
+      "seed": 10028,
+      "histogram": [
+        3,
+        28,
+        107,
+        224,
+        261,
+        232,
+        94,
+        45,
+        6
+      ],
+      "recovery": null,
+      "high_confidence": 0.0
+    },
+    {
+      "design": "ordinary",
+      "truth": "C",
+      "seed": 10029,
+      "histogram": [
+        5,
+        19,
+        112,
+        224,
+        284,
+        220,
+        100,
+        35,
+        1
+      ],
+      "recovery": null,
+      "high_confidence": 0.0
+    },
+    {
+      "design": "diagnostic",
+      "truth": "A",
+      "seed": 10100,
+      "histogram": [
+        94,
+        274,
+        323,
+        198,
+        82,
+        25,
+        4,
+        0,
+        0
+      ],
+      "recovery": 0.93,
+      "high_confidence": 0.695
+    },
+    {
+      "design": "diagnostic",
+      "truth": "A",
+      "seed": 10101,
+      "histogram": [
+        116,
+        268,
+        308,
+        198,
+        82,
+        19,
+        8,
+        1,
+        0
+      ],
+      "recovery": 0.931,
+      "high_confidence": 0.701
+    },
+    {
+      "design": "diagnostic",
+      "truth": "A",
+      "seed": 10102,
+      "histogram": [
+        97,
+        258,
+        319,
+        215,
+        82,
+        25,
+        4,
+        0,
+        0
+      ],
+      "recovery": 0.93,
+      "high_confidence": 0.678
+    },
+    {
+      "design": "diagnostic",
+      "truth": "A",
+      "seed": 10103,
+      "histogram": [
+        87,
+        282,
+        298,
+        228,
+        86,
+        16,
+        3,
+        0,
+        0
+      ],
+      "recovery": 0.938,
+      "high_confidence": 0.67
+    },
+    {
+      "design": "diagnostic",
+      "truth": "A",
+      "seed": 10104,
+      "histogram": [
+        114,
+        274,
+        285,
+        207,
+        92,
+        25,
+        3,
+        0,
+        0
+      ],
+      "recovery": 0.926,
+      "high_confidence": 0.676
+    },
+    {
+      "design": "diagnostic",
+      "truth": "A",
+      "seed": 10105,
+      "histogram": [
+        105,
+        260,
+        304,
+        216,
+        87,
+        23,
+        5,
+        0,
+        0
+      ],
+      "recovery": 0.9285,
+      "high_confidence": 0.674
+    },
+    {
+      "design": "diagnostic",
+      "truth": "A",
+      "seed": 10106,
+      "histogram": [
+        113,
+        261,
+        305,
+        210,
+        81,
+        27,
+        3,
+        0,
+        0
+      ],
+      "recovery": 0.9295,
+      "high_confidence": 0.682
+    },
+    {
+      "design": "diagnostic",
+      "truth": "A",
+      "seed": 10107,
+      "histogram": [
+        100,
+        274,
+        313,
+        193,
+        99,
+        15,
+        5,
+        1,
+        0
+      ],
+      "recovery": 0.9295,
+      "high_confidence": 0.693
+    },
+    {
+      "design": "diagnostic",
+      "truth": "A",
+      "seed": 10108,
+      "histogram": [
+        105,
+        253,
+        310,
+        206,
+        88,
+        32,
+        6,
+        0,
+        0
+      ],
+      "recovery": 0.918,
+      "high_confidence": 0.674
+    },
+    {
+      "design": "diagnostic",
+      "truth": "A",
+      "seed": 10109,
+      "histogram": [
+        96,
+        268,
+        321,
+        217,
+        69,
+        23,
+        6,
+        0,
+        0
+      ],
+      "recovery": 0.9365,
+      "high_confidence": 0.691
+    },
+    {
+      "design": "diagnostic",
+      "truth": "B",
+      "seed": 10110,
+      "histogram": [
+        0,
+        0,
+        4,
+        24,
+        77,
+        190,
+        356,
+        249,
+        100
+      ],
+      "recovery": 0.9335,
+      "high_confidence": 0.709
+    },
+    {
+      "design": "diagnostic",
+      "truth": "B",
+      "seed": 10111,
+      "histogram": [
+        0,
+        0,
+        3,
+        32,
+        87,
+        211,
+        318,
+        236,
+        113
+      ],
+      "recovery": 0.9215,
+      "high_confidence": 0.67
+    },
+    {
+      "design": "diagnostic",
+      "truth": "B",
+      "seed": 10112,
+      "histogram": [
+        0,
+        0,
+        5,
+        33,
+        79,
+        210,
+        329,
+        252,
+        92
+      ],
+      "recovery": 0.9225,
+      "high_confidence": 0.678
+    },
+    {
+      "design": "diagnostic",
+      "truth": "B",
+      "seed": 10113,
+      "histogram": [
+        0,
+        0,
+        1,
+        28,
+        95,
+        200,
+        324,
+        267,
+        85
+      ],
+      "recovery": 0.9235,
+      "high_confidence": 0.677
+    },
+    {
+      "design": "diagnostic",
+      "truth": "B",
+      "seed": 10114,
+      "histogram": [
+        0,
+        1,
+        1,
+        19,
+        72,
+        195,
+        316,
+        280,
+        116
+      ],
+      "recovery": 0.943,
+      "high_confidence": 0.714
+    },
+    {
+      "design": "diagnostic",
+      "truth": "B",
+      "seed": 10115,
+      "histogram": [
+        0,
+        1,
+        4,
+        28,
+        77,
+        223,
+        305,
+        262,
+        100
+      ],
+      "recovery": 0.9285,
+      "high_confidence": 0.672
+    },
+    {
+      "design": "diagnostic",
+      "truth": "B",
+      "seed": 10116,
+      "histogram": [
+        0,
+        0,
+        7,
+        21,
+        93,
+        197,
+        309,
+        279,
+        94
+      ],
+      "recovery": 0.9255,
+      "high_confidence": 0.689
+    },
+    {
+      "design": "diagnostic",
+      "truth": "B",
+      "seed": 10117,
+      "histogram": [
+        0,
+        1,
+        2,
+        27,
+        70,
+        246,
+        316,
+        242,
+        96
+      ],
+      "recovery": 0.935,
+      "high_confidence": 0.657
+    },
+    {
+      "design": "diagnostic",
+      "truth": "B",
+      "seed": 10118,
+      "histogram": [
+        0,
+        0,
+        4,
+        22,
+        81,
+        222,
+        313,
+        253,
+        105
+      ],
+      "recovery": 0.9335,
+      "high_confidence": 0.675
+    },
+    {
+      "design": "diagnostic",
+      "truth": "B",
+      "seed": 10119,
+      "histogram": [
+        0,
+        0,
+        2,
+        19,
+        88,
+        206,
+        331,
+        263,
+        91
+      ],
+      "recovery": 0.935,
+      "high_confidence": 0.687
+    },
+    {
+      "design": "diagnostic",
+      "truth": "C",
+      "seed": 10120,
+      "histogram": [
+        4,
+        38,
+        81,
+        227,
+        290,
+        224,
+        108,
+        25,
+        3
+      ],
+      "recovery": null,
+      "high_confidence": 0.259
+    },
+    {
+      "design": "diagnostic",
+      "truth": "C",
+      "seed": 10121,
+      "histogram": [
+        1,
+        35,
+        113,
+        204,
+        281,
+        216,
+        106,
+        40,
+        4
+      ],
+      "recovery": null,
+      "high_confidence": 0.299
+    },
+    {
+      "design": "diagnostic",
+      "truth": "C",
+      "seed": 10122,
+      "histogram": [
+        6,
+        38,
+        89,
+        218,
+        276,
+        224,
+        111,
+        36,
+        2
+      ],
+      "recovery": null,
+      "high_confidence": 0.282
+    },
+    {
+      "design": "diagnostic",
+      "truth": "C",
+      "seed": 10123,
+      "histogram": [
+        3,
+        32,
+        109,
+        230,
+        284,
+        207,
+        100,
+        34,
+        1
+      ],
+      "recovery": null,
+      "high_confidence": 0.279
+    },
+    {
+      "design": "diagnostic",
+      "truth": "C",
+      "seed": 10124,
+      "histogram": [
+        4,
+        27,
+        112,
+        198,
+        294,
+        215,
+        116,
+        32,
+        2
+      ],
+      "recovery": null,
+      "high_confidence": 0.293
+    },
+    {
+      "design": "diagnostic",
+      "truth": "C",
+      "seed": 10125,
+      "histogram": [
+        0,
+        26,
+        117,
+        224,
+        255,
+        232,
+        107,
+        36,
+        3
+      ],
+      "recovery": null,
+      "high_confidence": 0.289
+    },
+    {
+      "design": "diagnostic",
+      "truth": "C",
+      "seed": 10126,
+      "histogram": [
+        5,
+        28,
+        119,
+        213,
+        271,
+        208,
+        120,
+        32,
+        4
+      ],
+      "recovery": null,
+      "high_confidence": 0.308
+    },
+    {
+      "design": "diagnostic",
+      "truth": "C",
+      "seed": 10127,
+      "histogram": [
+        4,
+        39,
+        111,
+        218,
+        259,
+        230,
+        108,
+        26,
+        5
+      ],
+      "recovery": null,
+      "high_confidence": 0.293
+    },
+    {
+      "design": "diagnostic",
+      "truth": "C",
+      "seed": 10128,
+      "histogram": [
+        3,
+        38,
+        116,
+        220,
+        255,
+        227,
+        102,
+        34,
+        5
+      ],
+      "recovery": null,
+      "high_confidence": 0.298
+    },
+    {
+      "design": "diagnostic",
+      "truth": "C",
+      "seed": 10129,
+      "histogram": [
+        4,
+        30,
+        108,
+        206,
+        276,
+        219,
+        117,
+        34,
+        6
+      ],
+      "recovery": null,
+      "high_confidence": 0.299
+    }
+  ],
+  "controls": {
+    "positive_domain_identical": true,
+    "identical_model_null": true,
+    "invalid_x": true,
+    "invalid_model": true,
+    "invalid_probability": true,
+    "diagnostic_gain_at_least_0_1": true,
+    "mc_consistency": true,
+    "tampered_histogram_rejected": true
+  },
+  "limits": "Synthetic prescribed-model unit benchmark; C is outside candidate family. No empirical neural mechanism, clinical utility or generalization claim.",
+  "pooled_mc": [
+    {
+      "design": "ordinary",
+      "truth": "A",
+      "metric": "recovery",
+      "estimate": 0.5,
+      "exact": 0.5,
+      "abs_error": 0.0
+    },
+    {
+      "design": "ordinary",
+      "truth": "A",
+      "metric": "high_confidence",
+      "estimate": 0.0,
+      "exact": 0.0,
+      "abs_error": 0.0
+    },
+    {
+      "design": "ordinary",
+      "truth": "B",
+      "metric": "recovery",
+      "estimate": 0.5,
+      "exact": 0.5,
+      "abs_error": 0.0
+    },
+    {
+      "design": "ordinary",
+      "truth": "B",
+      "metric": "high_confidence",
+      "estimate": 0.0,
+      "exact": 0.0,
+      "abs_error": 0.0
+    },
+    {
+      "design": "ordinary",
+      "truth": "C",
+      "metric": "high_confidence",
+      "estimate": 0.0,
+      "exact": 0.0,
+      "abs_error": 0.0
+    },
+    {
+      "design": "diagnostic",
+      "truth": "A",
+      "metric": "recovery",
+      "estimate": 0.9297000000000001,
+      "exact": 0.929443359375,
+      "abs_error": 0.0002566406250000819
+    },
+    {
+      "design": "diagnostic",
+      "truth": "A",
+      "metric": "high_confidence",
+      "estimate": 0.6834,
+      "exact": 0.682769775390625,
+      "abs_error": 0.0006302246093750075
+    },
+    {
+      "design": "diagnostic",
+      "truth": "B",
+      "metric": "recovery",
+      "estimate": 0.93015,
+      "exact": 0.929443359375,
+      "abs_error": 0.0007066406250000323
+    },
+    {
+      "design": "diagnostic",
+      "truth": "B",
+      "metric": "high_confidence",
+      "estimate": 0.6828000000000001,
+      "exact": 0.682769775390625,
+      "abs_error": 3.022460937507354e-05
+    },
+    {
+      "design": "diagnostic",
+      "truth": "C",
+      "metric": "high_confidence",
+      "estimate": 0.2899,
+      "exact": 0.2890625,
+      "abs_error": 0.000837499999999991
+    }
+  ],
+  "author_checks_passed": true,
+  "independent_verification": "PENDING",
+  "runtime_seconds": 0.14075762599532027,
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.41"
+  }
+}

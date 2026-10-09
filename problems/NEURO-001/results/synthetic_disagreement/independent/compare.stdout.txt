@@ -1,0 +1,18 @@
+PASS independent sequence-enumeration arithmetic and all 60 seeded histograms
+Maximum entropy absolute discrepancy: 1.1102230246251565e-16
+Maximum pooled MC absolute discrepancy: 0.000837499999999991
+CONTROL histogram_total_plus_one author=REJECTED independent=REJECTED
+CONTROL histogram_redistribution_total_preserved author=ACCEPTED independent=REJECTED
+CONTROL diagnostic_EIG_plus_0_125 author=ACCEPTED independent=REJECTED
+CONTROL diagnostic_C_confidence_set_zero author=ACCEPTED independent=REJECTED
+CONTROL ordinary_EIG_NaN author=ACCEPTED independent=REJECTED
+CONTROL selected_input_changed author=ACCEPTED independent=REJECTED
+CONTROL duplicated_seed author=ACCEPTED independent=REJECTED
+INPUT CONTROL invalid_x REJECTED
+INPUT CONTROL invalid_model REJECTED
+INPUT CONTROL entropy_invalid_probability REJECTED
+INPUT CONTROL exact_invalid_truth_probability ACCEPTED
+PASS author stdout, stderr, exit code and immutable artifact hashes
+NUMERIC VERDICT: PASS_FOR_FROZEN_SYNTHETIC_INSTANCE
+CONTROL ADEQUACY: LIMITED: author validator rejects malformed histogram but accepts semantic tampering and NaN; independent verifier rejects all seven injected corruptions.
+Output: /workspace/shared/frontier-neuro-independent/comparison.json
