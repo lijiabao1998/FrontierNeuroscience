@@ -1,0 +1,124 @@
+{
+  "round_id": "20261009T222712980221Z-gpt-NEURO-001",
+  "problem_id": "NEURO-001",
+  "agent": "gpt",
+  "branch": "gpt/NEURO-001-synthetic-disagreement-resumed-20261009t222712980221z",
+  "base_sha": "e257e97a7ee7392eea543f4721ac8baa66837d4e",
+  "started_at": "2026-10-09T22:27:12.980221+00:00",
+  "state": "FINISHED",
+  "acceptance": "Frozen protocol problems/NEURO-001/experiments/synthetic_disagreement/protocol.json SHA256 6cd7879947d13de6c7b92b0e91974769157dfbddcef844ed21d8e03a0cac9bfa",
+  "not_done": "No real neural/behavioral data, fitted high-capacity models, subjects, sessions, ecological validity, clinical or mechanism conclusions; no parent problem completion.",
+  "budget": {
+    "wall_minutes": 30,
+    "usd": 0,
+    "max_trials": 100
+  },
+  "preflight": {
+    "checked_at": "2026-10-09T22:28:15.144251+00:00",
+    "verdict": "PARTIAL_PROGRESS",
+    "queries": [
+      {
+        "category": "general",
+        "query": "\"Making models disagree to learn how brains compute\"",
+        "engine": "OpenAI web search",
+        "searched_at": "2026-10-09T22:27:14+00:00",
+        "outcome": "Existing controversial-stimulus and Bayesian-design literature located. No new method or global resolution claimed; bounded correction query did not establish absence of corrections."
+      },
+      {
+        "category": "discipline",
+        "query": "site:arxiv.org controversial stimuli model discrimination Golan Kriegeskorte",
+        "engine": "OpenAI web search",
+        "searched_at": "2026-10-09T22:27:14+00:00",
+        "outcome": "Existing controversial-stimulus and Bayesian-design literature located. No new method or global resolution claimed; bounded correction query did not establish absence of corrections."
+      },
+      {
+        "category": "solution",
+        "query": "model disagreement stimulus selection neuroscience solved optimal experimental design 2026",
+        "engine": "OpenAI web search",
+        "searched_at": "2026-10-09T22:27:14+00:00",
+        "outcome": "Existing controversial-stimulus and Bayesian-design literature located. No new method or global resolution claimed; bounded correction query did not establish absence of corrections."
+      },
+      {
+        "category": "criticism",
+        "query": "\"Controversial stimuli\" correction erratum misspecification",
+        "engine": "OpenAI web search",
+        "searched_at": "2026-10-09T22:27:14+00:00",
+        "outcome": "Existing controversial-stimulus and Bayesian-design literature located. No new method or global resolution claimed; bounded correction query did not establish absence of corrections."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Controversial stimuli: pitting neural networks against each other as models of human recognition",
+        "url": "https://arxiv.org/html/1911.09288v2",
+        "kind": "primary",
+        "supports": "Disagreement-based testing motivates this unit baseline; candidate incompleteness and instance dependence constrain interpretation.",
+        "version": "arXiv1911.09288v2",
+        "read_at": "2026-10-09T22:28:15.144251+00:00",
+        "read_extent": "Methods objective and discussion/limitations HTML read; metadata date inconsistency in rendered body not used.",
+        "license": "Own short summary/citation only; no article, images, code or data copied."
+      },
+      {
+        "title": "Making models disagree to learn how brains compute",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13558085/",
+        "kind": "review",
+        "supports": "Expected-information model selection and parameter/misspecification limitations.",
+        "read_at": "2026-10-09T22:28:15.144251+00:00",
+        "read_extent": "Sections3.1/3.2 and equations1-3,14 read in full-text HTML",
+        "license": "Own summary/citation only; no redistribution."
+      }
+    ],
+    "limitations": "Bounded queries only; no assertion of exhaustive correction review. Synthetic affine Bernoulli models are purpose-built unit controls, not the card empirical study. Source methods already seen, not blind.",
+    "scope_comparison": "Known-method reproduction component; parent asks empirical across-model/subject evidence and remains OPEN.",
+    "baseline": "Positive-domain identical predictions versus model-selected signed scalar input; exact probabilities and independent held-out synthetic response draws.",
+    "sources_read": true,
+    "scope_compared": true,
+    "retractions_checked": true,
+    "licenses_checked": true,
+    "safety_checked": true,
+    "baseline_identified": true,
+    "acceptance_frozen": true
+  },
+  "artifacts": [
+    "problems/NEURO-001/experiments/synthetic_disagreement/baseline.py",
+    "problems/NEURO-001/experiments/synthetic_disagreement/protocol.json",
+    "problems/NEURO-001/results/synthetic_disagreement/REPORT.md",
+    "problems/NEURO-001/results/synthetic_disagreement/independent/MANIFEST.json",
+    "problems/NEURO-001/results/synthetic_disagreement/independent/VERIFICATION.md",
+    "problems/NEURO-001/results/synthetic_disagreement/independent/attempt_01_syntax_error.stdout.txt",
+    "problems/NEURO-001/results/synthetic_disagreement/independent/compare.py",
+    "problems/NEURO-001/results/synthetic_disagreement/independent/compare.stdout.txt",
+    "problems/NEURO-001/results/synthetic_disagreement/independent/comparison.json",
+    "problems/NEURO-001/results/synthetic_disagreement/independent/oracle.py",
+    "problems/NEURO-001/results/synthetic_disagreement/independent/oracle.stdout.txt",
+    "problems/NEURO-001/results/synthetic_disagreement/independent/oracle_exact.stdout.txt",
+    "problems/NEURO-001/results/synthetic_disagreement/independent/oracle_exact_results.json",
+    "problems/NEURO-001/results/synthetic_disagreement/independent/oracle_results.json",
+    "problems/NEURO-001/results/synthetic_disagreement/results.json"
+  ],
+  "result": {
+    "author_execution": "completed",
+    "independent_verification": "Numerical reproduction passed; validator/control acceptance FAILED/INCOMPLETE. Separate ordered-sequence oracle and60seed histogram replay; failures preserved.",
+    "command": "python problems/NEURO-001/experiments/synthetic_disagreement/baseline.py",
+    "exit_code": 0,
+    "configurations": 60,
+    "sequences": 60000,
+    "draws": 480000,
+    "out_of_family_high_confidence": 0.2890625,
+    "limitations": "Synthetic prescribed-model unit benchmark; C is outside candidate family. No empirical neural mechanism, clinical utility or generalization claim.",
+    "acceptance": "FAILED_INCOMPLETE",
+    "negative_results": [
+      "Closed-family confidence>=95% occurs37/128 under omitted generator C",
+      "Author validator accepts six semantic/NaN/seed corruptions despite passing one total-count tamper control",
+      "exact() accepts invalid truth probability2 and returns signed masses"
+    ],
+    "unperformed": "No evaluator repair, real neural data or parent-question completion"
+  },
+  "local_base_mapping": {
+    "commit": "6ef3e8efff83c79691bcb3e310a0dd8f6262cd61",
+    "tree": "27269feb855608052ee35ffe67ddcb97faaf4d4a",
+    "verification": "Remote Git commit tree checked equal2026-10-09T22:27:39Z"
+  },
+  "claim": "https://github.com/lijiabao1998/FrontierNeuroscience/issues/3",
+  "admitted_at": "2026-10-09T22:28:15.193851+00:00",
+  "finished_at": "2026-10-09T22:33:05.386871+00:00"
+}

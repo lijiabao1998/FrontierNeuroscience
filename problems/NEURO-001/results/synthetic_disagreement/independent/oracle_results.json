@@ -1,0 +1,2015 @@
+{
+  "identity": "Independent verifier, separate session; protocol-first implementation before viewing author code/results",
+  "scope": "Synthetic unit baseline only. Parent empirical NEURO-001 remains OPEN.",
+  "protocol_sha256": "6cd7879947d13de6c7b92b0e91974769157dfbddcef844ed21d8e03a0cac9bfa",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "selected_input": {
+    "rational": "-1",
+    "float": -1.0
+  },
+  "grid_scores": [
+    [
+      {
+        "rational": "-1",
+        "float": -1.0
+      },
+      0.18872187554086717
+    ],
+    [
+      {
+        "rational": "-3/4",
+        "float": -0.75
+      },
+      0.10396176746544256
+    ],
+    [
+      {
+        "rational": "-1/2",
+        "float": -0.5
+      },
+      0.04556599707503506
+    ],
+    [
+      {
+        "rational": "-1/4",
+        "float": -0.25
+      },
+      0.011300591711502508
+    ],
+    [
+      {
+        "rational": "0",
+        "float": 0.0
+      },
+      0.0
+    ],
+    [
+      {
+        "rational": "1/4",
+        "float": 0.25
+      },
+      0.0
+    ],
+    [
+      {
+        "rational": "1/2",
+        "float": 0.5
+      },
+      0.0
+    ],
+    [
+      {
+        "rational": "3/4",
+        "float": 0.75
+      },
+      0.0
+    ],
+    [
+      {
+        "rational": "1",
+        "float": 1.0
+      },
+      0.0
+    ]
+  ],
+  "designs": {
+    "diagnostic": {
+      "probability_A": {
+        "rational": "1/4",
+        "float": 0.25
+      },
+      "probability_B": {
+        "rational": "3/4",
+        "float": 0.75
+      },
+      "sequence_length": 8,
+      "count_masses": {
+        "A": [
+          {
+            "rational": "6561/65536",
+            "float": 0.1001129150390625
+          },
+          {
+            "rational": "2187/8192",
+            "float": 0.2669677734375
+          },
+          {
+            "rational": "5103/16384",
+            "float": 0.31146240234375
+          },
+          {
+            "rational": "1701/8192",
+            "float": 0.2076416015625
+          },
+          {
+            "rational": "2835/32768",
+            "float": 0.086517333984375
+          },
+          {
+            "rational": "189/8192",
+            "float": 0.0230712890625
+          },
+          {
+            "rational": "63/16384",
+            "float": 0.00384521484375
+          },
+          {
+            "rational": "3/8192",
+            "float": 0.0003662109375
+          },
+          {
+            "rational": "1/65536",
+            "float": 1.52587890625e-05
+          }
+        ],
+        "B": [
+          {
+            "rational": "1/65536",
+            "float": 1.52587890625e-05
+          },
+          {
+            "rational": "3/8192",
+            "float": 0.0003662109375
+          },
+          {
+            "rational": "63/16384",
+            "float": 0.00384521484375
+          },
+          {
+            "rational": "189/8192",
+            "float": 0.0230712890625
+          },
+          {
+            "rational": "2835/32768",
+            "float": 0.086517333984375
+          },
+          {
+            "rational": "1701/8192",
+            "float": 0.2076416015625
+          },
+          {
+            "rational": "5103/16384",
+            "float": 0.31146240234375
+          },
+          {
+            "rational": "2187/8192",
+            "float": 0.2669677734375
+          },
+          {
+            "rational": "6561/65536",
+            "float": 0.1001129150390625
+          }
+        ],
+        "C": [
+          {
+            "rational": "1/256",
+            "float": 0.00390625
+          },
+          {
+            "rational": "1/32",
+            "float": 0.03125
+          },
+          {
+            "rational": "7/64",
+            "float": 0.109375
+          },
+          {
+            "rational": "7/32",
+            "float": 0.21875
+          },
+          {
+            "rational": "35/128",
+            "float": 0.2734375
+          },
+          {
+            "rational": "7/32",
+            "float": 0.21875
+          },
+          {
+            "rational": "7/64",
+            "float": 0.109375
+          },
+          {
+            "rational": "1/32",
+            "float": 0.03125
+          },
+          {
+            "rational": "1/256",
+            "float": 0.00390625
+          }
+        ]
+      },
+      "posterior_A_by_k": [
+        {
+          "rational": "6561/6562",
+          "float": 0.999847607436757
+        },
+        {
+          "rational": "729/730",
+          "float": 0.9986301369863013
+        },
+        {
+          "rational": "81/82",
+          "float": 0.9878048780487805
+        },
+        {
+          "rational": "9/10",
+          "float": 0.9
+        },
+        {
+          "rational": "1/2",
+          "float": 0.5
+        },
+        {
+          "rational": "1/10",
+          "float": 0.1
+        },
+        {
+          "rational": "1/82",
+          "float": 0.012195121951219513
+        },
+        {
+          "rational": "1/730",
+          "float": 0.0013698630136986301
+        },
+        {
+          "rational": "1/6562",
+          "float": 0.00015239256324291374
+        }
+      ],
+      "model_recovery": {
+        "A": {
+          "rational": "3807/4096",
+          "float": 0.929443359375
+        },
+        "B": {
+          "rational": "3807/4096",
+          "float": 0.929443359375
+        }
+      },
+      "equal_prior_recovery": {
+        "rational": "3807/4096",
+        "float": 0.929443359375
+      },
+      "EIG_bits": 0.7710929067550158,
+      "mean_posterior_A": {
+        "A": {
+          "rational": "17810681/19640066",
+          "float": 0.9068544372508728
+        },
+        "B": {
+          "rational": "1829385/19640066",
+          "float": 0.09314556274912722
+        },
+        "C": {
+          "rational": "1/2",
+          "float": 0.5
+        }
+      },
+      "mean_max_posterior": {
+        "A": {
+          "rational": "3807/4096",
+          "float": 0.929443359375
+        },
+        "B": {
+          "rational": "3807/4096",
+          "float": 0.929443359375
+        },
+        "C": {
+          "rational": "641661979/785602640",
+          "float": 0.8167767600679142
+        }
+      },
+      "confidence_ge_0_95": {
+        "A": {
+          "rational": "22373/32768",
+          "float": 0.682769775390625
+        },
+        "B": {
+          "rational": "22373/32768",
+          "float": 0.682769775390625
+        },
+        "C": {
+          "rational": "37/128",
+          "float": 0.2890625
+        }
+      }
+    },
+    "ordinary": {
+      "probability_A": {
+        "rational": "5/8",
+        "float": 0.625
+      },
+      "probability_B": {
+        "rational": "5/8",
+        "float": 0.625
+      },
+      "sequence_length": 8,
+      "count_masses": {
+        "A": [
+          {
+            "rational": "6561/16777216",
+            "float": 0.0003910660743713379
+          },
+          {
+            "rational": "10935/2097152",
+            "float": 0.005214214324951172
+          },
+          {
+            "rational": "127575/4194304",
+            "float": 0.030416250228881836
+          },
+          {
+            "rational": "212625/2097152",
+            "float": 0.10138750076293945
+          },
+          {
+            "rational": "1771875/8388608",
+            "float": 0.21122395992279053
+          },
+          {
+            "rational": "590625/2097152",
+            "float": 0.2816319465637207
+          },
+          {
+            "rational": "984375/4194304",
+            "float": 0.23469328880310059
+          },
+          {
+            "rational": "234375/2097152",
+            "float": 0.11175870895385742
+          },
+          {
+            "rational": "390625/16777216",
+            "float": 0.023283064365386963
+          }
+        ],
+        "B": [
+          {
+            "rational": "6561/16777216",
+            "float": 0.0003910660743713379
+          },
+          {
+            "rational": "10935/2097152",
+            "float": 0.005214214324951172
+          },
+          {
+            "rational": "127575/4194304",
+            "float": 0.030416250228881836
+          },
+          {
+            "rational": "212625/2097152",
+            "float": 0.10138750076293945
+          },
+          {
+            "rational": "1771875/8388608",
+            "float": 0.21122395992279053
+          },
+          {
+            "rational": "590625/2097152",
+            "float": 0.2816319465637207
+          },
+          {
+            "rational": "984375/4194304",
+            "float": 0.23469328880310059
+          },
+          {
+            "rational": "234375/2097152",
+            "float": 0.11175870895385742
+          },
+          {
+            "rational": "390625/16777216",
+            "float": 0.023283064365386963
+          }
+        ],
+        "C": [
+          {
+            "rational": "1/256",
+            "float": 0.00390625
+          },
+          {
+            "rational": "1/32",
+            "float": 0.03125
+          },
+          {
+            "rational": "7/64",
+            "float": 0.109375
+          },
+          {
+            "rational": "7/32",
+            "float": 0.21875
+          },
+          {
+            "rational": "35/128",
+            "float": 0.2734375
+          },
+          {
+            "rational": "7/32",
+            "float": 0.21875
+          },
+          {
+            "rational": "7/64",
+            "float": 0.109375
+          },
+          {
+            "rational": "1/32",
+            "float": 0.03125
+          },
+          {
+            "rational": "1/256",
+            "float": 0.00390625
+          }
+        ]
+      },
+      "posterior_A_by_k": [
+        {
+          "rational": "1/2",
+          "float": 0.5
+        },
+        {
+          "rational": "1/2",
+          "float": 0.5
+        },
+        {
+          "rational": "1/2",
+          "float": 0.5
+        },
+        {
+          "rational": "1/2",
+          "float": 0.5
+        },
+        {
+          "rational": "1/2",
+          "float": 0.5
+        },
+        {
+          "rational": "1/2",
+          "float": 0.5
+        },
+        {
+          "rational": "1/2",
+          "float": 0.5
+        },
+        {
+          "rational": "1/2",
+          "float": 0.5
+        },
+        {
+          "rational": "1/2",
+          "float": 0.5
+        }
+      ],
+      "model_recovery": {
+        "A": {
+          "rational": "1/2",
+          "float": 0.5
+        },
+        "B": {
+          "rational": "1/2",
+          "float": 0.5
+        }
+      },
+      "equal_prior_recovery": {
+        "rational": "1/2",
+        "float": 0.5
+      },
+      "EIG_bits": 0.0,
+      "mean_posterior_A": {
+        "A": {
+          "rational": "1/2",
+          "float": 0.5
+        },
+        "B": {
+          "rational": "1/2",
+          "float": 0.5
+        },
+        "C": {
+          "rational": "1/2",
+          "float": 0.5
+        }
+      },
+      "mean_max_posterior": {
+        "A": {
+          "rational": "1/2",
+          "float": 0.5
+        },
+        "B": {
+          "rational": "1/2",
+          "float": 0.5
+        },
+        "C": {
+          "rational": "1/2",
+          "float": 0.5
+        }
+      },
+      "confidence_ge_0_95": {
+        "A": {
+          "rational": "0",
+          "float": 0.0
+        },
+        "B": {
+          "rational": "0",
+          "float": 0.0
+        },
+        "C": {
+          "rational": "0",
+          "float": 0.0
+        }
+      }
+    }
+  },
+  "identical_controls": [
+    {
+      "x": {
+        "rational": "-1",
+        "float": -1.0
+      },
+      "EIG_bits": 0.0,
+      "recovery": {
+        "rational": "1/2",
+        "float": 0.5
+      }
+    },
+    {
+      "x": {
+        "rational": "-3/4",
+        "float": -0.75
+      },
+      "EIG_bits": 0.0,
+      "recovery": {
+        "rational": "1/2",
+        "float": 0.5
+      }
+    },
+    {
+      "x": {
+        "rational": "-1/2",
+        "float": -0.5
+      },
+      "EIG_bits": 0.0,
+      "recovery": {
+        "rational": "1/2",
+        "float": 0.5
+      }
+    },
+    {
+      "x": {
+        "rational": "-1/4",
+        "float": -0.25
+      },
+      "EIG_bits": 0.0,
+      "recovery": {
+        "rational": "1/2",
+        "float": 0.5
+      }
+    },
+    {
+      "x": {
+        "rational": "0",
+        "float": 0.0
+      },
+      "EIG_bits": 0.0,
+      "recovery": {
+        "rational": "1/2",
+        "float": 0.5
+      }
+    },
+    {
+      "x": {
+        "rational": "1/4",
+        "float": 0.25
+      },
+      "EIG_bits": 0.0,
+      "recovery": {
+        "rational": "1/2",
+        "float": 0.5
+      }
+    },
+    {
+      "x": {
+        "rational": "1/2",
+        "float": 0.5
+      },
+      "EIG_bits": 0.0,
+      "recovery": {
+        "rational": "1/2",
+        "float": 0.5
+      }
+    },
+    {
+      "x": {
+        "rational": "3/4",
+        "float": 0.75
+      },
+      "EIG_bits": 0.0,
+      "recovery": {
+        "rational": "1/2",
+        "float": 0.5
+      }
+    },
+    {
+      "x": {
+        "rational": "1",
+        "float": 1.0
+      },
+      "EIG_bits": 0.0,
+      "recovery": {
+        "rational": "1/2",
+        "float": 0.5
+      }
+    }
+  ],
+  "invalid_controls": [
+    {
+      "test": "invalid x Fraction(-5, 4)",
+      "result": "PASS_REJECTED"
+    },
+    {
+      "test": "invalid x Fraction(5, 4)",
+      "result": "PASS_REJECTED"
+    },
+    {
+      "test": "invalid x nan",
+      "result": "PASS_REJECTED"
+    },
+    {
+      "test": "invalid x inf",
+      "result": "PASS_REJECTED"
+    },
+    {
+      "test": "invalid x '1/2'",
+      "result": "PASS_REJECTED"
+    },
+    {
+      "test": "invalid probability Fraction(-1, 100)",
+      "result": "PASS_REJECTED"
+    },
+    {
+      "test": "invalid probability Fraction(101, 100)",
+      "result": "PASS_REJECTED"
+    },
+    {
+      "test": "invalid probability nan",
+      "result": "PASS_REJECTED"
+    },
+    {
+      "test": "invalid probability inf",
+      "result": "PASS_REJECTED"
+    },
+    {
+      "test": "invalid sequence length 0",
+      "result": "PASS_REJECTED"
+    },
+    {
+      "test": "invalid sequence length -1",
+      "result": "PASS_REJECTED"
+    },
+    {
+      "test": "invalid sequence length 9",
+      "result": "PASS_REJECTED"
+    },
+    {
+      "test": "invalid sequence length 1.5",
+      "result": "PASS_REJECTED"
+    },
+    {
+      "test": "invalid sequence length True",
+      "result": "PASS_REJECTED"
+    },
+    {
+      "test": "invalid response",
+      "result": "PASS_REJECTED"
+    }
+  ],
+  "simulations_by_design_index_mapping": {
+    "ordinary/diagnostic": [
+      {
+        "design": "ordinary",
+        "truth": "A",
+        "seed": 10000,
+        "histogram": [
+          0,
+          6,
+          34,
+          111,
+          220,
+          264,
+          232,
+          110,
+          23
+        ],
+        "metrics": {
+          "recovery": 0.5,
+          "mean_posterior_A": 0.5,
+          "mean_max_posterior": 0.5,
+          "confidence_ge_0_95": 0.0
+        }
+      },
+      {
+        "design": "ordinary",
+        "truth": "A",
+        "seed": 10001,
+        "histogram": [
+          1,
+          4,
+          31,
+          114,
+          208,
+          272,
+          234,
+          117,
+          19
+        ],
+        "metrics": {
+          "recovery": 0.5,
+          "mean_posterior_A": 0.5,
+          "mean_max_posterior": 0.5,
+          "confidence_ge_0_95": 0.0
+        }
+      },
+      {
+        "design": "ordinary",
+        "truth": "A",
+        "seed": 10002,
+        "histogram": [
+          0,
+          3,
+          25,
+          92,
+          219,
+          303,
+          236,
+          100,
+          22
+        ],
+        "metrics": {
+          "recovery": 0.5,
+          "mean_posterior_A": 0.5,
+          "mean_max_posterior": 0.5,
+          "confidence_ge_0_95": 0.0
+        }
+      },
+      {
+        "design": "ordinary",
+        "truth": "A",
+        "seed": 10003,
+        "histogram": [
+          1,
+          4,
+          23,
+          112,
+          197,
+          270,
+          256,
+          116,
+          21
+        ],
+        "metrics": {
+          "recovery": 0.5,
+          "mean_posterior_A": 0.5,
+          "mean_max_posterior": 0.5,
+          "confidence_ge_0_95": 0.0
+        }
+      },
+      {
+        "design": "ordinary",
+        "truth": "A",
+        "seed": 10004,
+        "histogram": [
+          0,
+          5,
+          54,
+          106,
+          185,
+          306,
+          206,
+          110,
+          28
+        ],
+        "metrics": {
+          "recovery": 0.5,
+          "mean_posterior_A": 0.5,
+          "mean_max_posterior": 0.5,
+          "confidence_ge_0_95": 0.0
+        }
+      },
+      {
+        "design": "ordinary",
+        "truth": "A",
+        "seed": 10005,
+        "histogram": [
+          0,
+          5,
+          27,
+          104,
+          220,
+          283,
+          230,
+          105,
+          26
+        ],
+        "metrics": {
+          "recovery": 0.5,
+          "mean_posterior_A": 0.5,
+          "mean_max_posterior": 0.5,
+          "confidence_ge_0_95": 0.0
+        }
+      },
+      {
+        "design": "ordinary",
+        "truth": "A",
+        "seed": 10006,
+        "histogram": [
+          1,
+          5,
+          28,
+          94,
+          198,
+          279,
+          249,
+          118,
+          28
+        ],
+        "metrics": {
+          "recovery": 0.5,
+          "mean_posterior_A": 0.5,
+          "mean_max_posterior": 0.5,
+          "confidence_ge_0_95": 0.0
+        }
+      },
+      {
+        "design": "ordinary",
+        "truth": "A",
+        "seed": 10007,
+        "histogram": [
+          0,
+          1,
+          40,
+          103,
+          205,
+          292,
+          242,
+          96,
+          21
+        ],
+        "metrics": {
+          "recovery": 0.5,
+          "mean_posterior_A": 0.5,
+          "mean_max_posterior": 0.5,
+          "confidence_ge_0_95": 0.0
+        }
+      },
+      {
+        "design": "ordinary",
+        "truth": "A",
+        "seed": 10008,
+        "histogram": [
+          0,
+          4,
+          23,
+          108,
+          193,
+          289,
+          254,
+          110,
+          19
+        ],
+        "metrics": {
+          "recovery": 0.5,
+          "mean_posterior_A": 0.5,
+          "mean_max_posterior": 0.5,
+          "confidence_ge_0_95": 0.0
+        }
+      },
+      {
+        "design": "ordinary",
+        "truth": "A",
+        "seed": 10009,
+        "histogram": [
+          0,
+          8,
+          31,
+          119,
+          196,
+          276,
+          233,
+          117,
+          20
+        ],
+        "metrics": {
+          "recovery": 0.5,
+          "mean_posterior_A": 0.5,
+          "mean_max_posterior": 0.5,
+          "confidence_ge_0_95": 0.0
+        }
+      },
+      {
+        "design": "ordinary",
+        "truth": "B",
+        "seed": 10010,
+        "histogram": [
+          1,
+          3,
+          36,
+          102,
+          205,
+          262,
+          241,
+          122,
+          28
+        ],
+        "metrics": {
+          "recovery": 0.5,
+          "mean_posterior_A": 0.5,
+          "mean_max_posterior": 0.5,
+          "confidence_ge_0_95": 0.0
+        }
+      },
+      {
+        "design": "ordinary",
+        "truth": "B",
+        "seed": 10011,
+        "histogram": [
+          3,
+          3,
+          23,
+          107,
+          216,
+          283,
+          219,
+          122,
+          24
+        ],
+        "metrics": {
+          "recovery": 0.5,
+          "mean_posterior_A": 0.5,
+          "mean_max_posterior": 0.5,
+          "confidence_ge_0_95": 0.0
+        }
+      },
+      {
+        "design": "ordinary",
+        "truth": "B",
+        "seed": 10012,
+        "histogram": [
+          0,
+          5,
+          22,
+          107,
+          231,
+          265,
+          220,
+          127,
+          23
+        ],
+        "metrics": {
+          "recovery": 0.5,
+          "mean_posterior_A": 0.5,
+          "mean_max_posterior": 0.5,
+          "confidence_ge_0_95": 0.0
+        }
+      },
+      {
+        "design": "ordinary",
+        "truth": "B",
+        "seed": 10013,
+        "histogram": [
+          0,
+          4,
+          35,
+          102,
+          190,
+          296,
+          245,
+          105,
+          23
+        ],
+        "metrics": {
+          "recovery": 0.5,
+          "mean_posterior_A": 0.5,
+          "mean_max_posterior": 0.5,
+          "confidence_ge_0_95": 0.0
+        }
+      },
+      {
+        "design": "ordinary",
+        "truth": "B",
+        "seed": 10014,
+        "histogram": [
+          0,
+          3,
+          26,
+          101,
+          202,
+          251,
+          267,
+          120,
+          30
+        ],
+        "metrics": {
+          "recovery": 0.5,
+          "mean_posterior_A": 0.5,
+          "mean_max_posterior": 0.5,
+          "confidence_ge_0_95": 0.0
+        }
+      },
+      {
+        "design": "ordinary",
+        "truth": "B",
+        "seed": 10015,
+        "histogram": [
+          1,
+          4,
+          27,
+          113,
+          184,
+          292,
+          243,
+          114,
+          22
+        ],
+        "metrics": {
+          "recovery": 0.5,
+          "mean_posterior_A": 0.5,
+          "mean_max_posterior": 0.5,
+          "confidence_ge_0_95": 0.0
+        }
+      },
+      {
+        "design": "ordinary",
+        "truth": "B",
+        "seed": 10016,
+        "histogram": [
+          2,
+          2,
+          35,
+          115,
+          196,
+          264,
+          247,
+          120,
+          19
+        ],
+        "metrics": {
+          "recovery": 0.5,
+          "mean_posterior_A": 0.5,
+          "mean_max_posterior": 0.5,
+          "confidence_ge_0_95": 0.0
+        }
+      },
+      {
+        "design": "ordinary",
+        "truth": "B",
+        "seed": 10017,
+        "histogram": [
+          0,
+          3,
+          33,
+          118,
+          206,
+          259,
+          242,
+          122,
+          17
+        ],
+        "metrics": {
+          "recovery": 0.5,
+          "mean_posterior_A": 0.5,
+          "mean_max_posterior": 0.5,
+          "confidence_ge_0_95": 0.0
+        }
+      },
+      {
+        "design": "ordinary",
+        "truth": "B",
+        "seed": 10018,
+        "histogram": [
+          0,
+          3,
+          16,
+          91,
+          229,
+          281,
+          240,
+          120,
+          20
+        ],
+        "metrics": {
+          "recovery": 0.5,
+          "mean_posterior_A": 0.5,
+          "mean_max_posterior": 0.5,
+          "confidence_ge_0_95": 0.0
+        }
+      },
+      {
+        "design": "ordinary",
+        "truth": "B",
+        "seed": 10019,
+        "histogram": [
+          0,
+          5,
+          27,
+          100,
+          206,
+          306,
+          223,
+          109,
+          24
+        ],
+        "metrics": {
+          "recovery": 0.5,
+          "mean_posterior_A": 0.5,
+          "mean_max_posterior": 0.5,
+          "confidence_ge_0_95": 0.0
+        }
+      },
+      {
+        "design": "ordinary",
+        "truth": "C",
+        "seed": 10020,
+        "histogram": [
+          4,
+          18,
+          99,
+          222,
+          292,
+          218,
+          109,
+          31,
+          7
+        ],
+        "metrics": {
+          "recovery": null,
+          "mean_posterior_A": 0.5,
+          "mean_max_posterior": 0.5,
+          "confidence_ge_0_95": 0.0
+        }
+      },
+      {
+        "design": "ordinary",
+        "truth": "C",
+        "seed": 10021,
+        "histogram": [
+          2,
+          22,
+          109,
+          213,
+          274,
+          214,
+          130,
+          31,
+          5
+        ],
+        "metrics": {
+          "recovery": null,
+          "mean_posterior_A": 0.5,
+          "mean_max_posterior": 0.5,
+          "confidence_ge_0_95": 0.0
+        }
+      },
+      {
+        "design": "ordinary",
+        "truth": "C",
+        "seed": 10022,
+        "histogram": [
+          1,
+          30,
+          115,
+          222,
+          268,
+          211,
+          116,
+          35,
+          2
+        ],
+        "metrics": {
+          "recovery": null,
+          "mean_posterior_A": 0.5,
+          "mean_max_posterior": 0.5,
+          "confidence_ge_0_95": 0.0
+        }
+      },
+      {
+        "design": "ordinary",
+        "truth": "C",
+        "seed": 10023,
+        "histogram": [
+          4,
+          27,
+          99,
+          223,
+          261,
+          219,
+          117,
+          47,
+          3
+        ],
+        "metrics": {
+          "recovery": null,
+          "mean_posterior_A": 0.5,
+          "mean_max_posterior": 0.5,
+          "confidence_ge_0_95": 0.0
+        }
+      },
+      {
+        "design": "ordinary",
+        "truth": "C",
+        "seed": 10024,
+        "histogram": [
+          3,
+          37,
+          110,
+          206,
+          270,
+          229,
+          110,
+          29,
+          6
+        ],
+        "metrics": {
+          "recovery": null,
+          "mean_posterior_A": 0.5,
+          "mean_max_posterior": 0.5,
+          "confidence_ge_0_95": 0.0
+        }
+      },
+      {
+        "design": "ordinary",
+        "truth": "C",
+        "seed": 10025,
+        "histogram": [
+          4,
+          27,
+          102,
+          228,
+          286,
+          209,
+          115,
+          26,
+          3
+        ],
+        "metrics": {
+          "recovery": null,
+          "mean_posterior_A": 0.5,
+          "mean_max_posterior": 0.5,
+          "confidence_ge_0_95": 0.0
+        }
+      },
+      {
+        "design": "ordinary",
+        "truth": "C",
+        "seed": 10026,
+        "histogram": [
+          2,
+          21,
+          137,
+          205,
+          274,
+          229,
+          97,
+          31,
+          4
+        ],
+        "metrics": {
+          "recovery": null,
+          "mean_posterior_A": 0.5,
+          "mean_max_posterior": 0.5,
+          "confidence_ge_0_95": 0.0
+        }
+      },
+      {
+        "design": "ordinary",
+        "truth": "C",
+        "seed": 10027,
+        "histogram": [
+          3,
+          35,
+          103,
+          239,
+          273,
+          214,
+          104,
+          27,
+          2
+        ],
+        "metrics": {
+          "recovery": null,
+          "mean_posterior_A": 0.5,
+          "mean_max_posterior": 0.5,
+          "confidence_ge_0_95": 0.0
+        }
+      },
+      {
+        "design": "ordinary",
+        "truth": "C",
+        "seed": 10028,
+        "histogram": [
+          3,
+          28,
+          107,
+          224,
+          261,
+          232,
+          94,
+          45,
+          6
+        ],
+        "metrics": {
+          "recovery": null,
+          "mean_posterior_A": 0.5,
+          "mean_max_posterior": 0.5,
+          "confidence_ge_0_95": 0.0
+        }
+      },
+      {
+        "design": "ordinary",
+        "truth": "C",
+        "seed": 10029,
+        "histogram": [
+          5,
+          19,
+          112,
+          224,
+          284,
+          220,
+          100,
+          35,
+          1
+        ],
+        "metrics": {
+          "recovery": null,
+          "mean_posterior_A": 0.5,
+          "mean_max_posterior": 0.5,
+          "confidence_ge_0_95": 0.0
+        }
+      },
+      {
+        "design": "diagnostic",
+        "truth": "A",
+        "seed": 10100,
+        "histogram": [
+          94,
+          274,
+          323,
+          198,
+          82,
+          25,
+          4,
+          0,
+          0
+        ],
+        "metrics": {
+          "recovery": 0.93,
+          "mean_posterior_A": 0.9084200887308627,
+          "mean_max_posterior": 0.9323225277552529,
+          "confidence_ge_0_95": 0.695
+        }
+      },
+      {
+        "design": "diagnostic",
+        "truth": "A",
+        "seed": 10101,
+        "histogram": [
+          116,
+          268,
+          308,
+          198,
+          82,
+          19,
+          8,
+          1,
+          0
+        ],
+        "metrics": {
+          "recovery": 0.931,
+          "mean_posterior_A": 0.9090580324526404,
+          "mean_max_posterior": 0.9330601707753935,
+          "confidence_ge_0_95": 0.701
+        }
+      },
+      {
+        "design": "diagnostic",
+        "truth": "A",
+        "seed": 10102,
+        "histogram": [
+          97,
+          258,
+          319,
+          215,
+          82,
+          25,
+          4,
+          0,
+          0
+        ],
+        "metrics": {
+          "recovery": 0.93,
+          "mean_posterior_A": 0.906790329849197,
+          "mean_max_posterior": 0.9306927688735873,
+          "confidence_ge_0_95": 0.678
+        }
+      },
+      {
+        "design": "diagnostic",
+        "truth": "A",
+        "seed": 10103,
+        "histogram": [
+          87,
+          282,
+          298,
+          228,
+          86,
+          16,
+          3,
+          0,
+          0
+        ],
+        "metrics": {
+          "recovery": 0.938,
+          "mean_posterior_A": 0.912802879501525,
+          "mean_max_posterior": 0.9285297087698178,
+          "confidence_ge_0_95": 0.67
+        }
+      },
+      {
+        "design": "diagnostic",
+        "truth": "A",
+        "seed": 10104,
+        "histogram": [
+          114,
+          274,
+          285,
+          207,
+          92,
+          25,
+          3,
+          0,
+          0
+        ],
+        "metrics": {
+          "recovery": 0.926,
+          "mean_posterior_A": 0.903968260391793,
+          "mean_max_posterior": 0.9268950896600857,
+          "confidence_ge_0_95": 0.676
+        }
+      },
+      {
+        "design": "diagnostic",
+        "truth": "A",
+        "seed": 10105,
+        "histogram": [
+          105,
+          260,
+          304,
+          216,
+          87,
+          23,
+          5,
+          0,
+          0
+        ],
+        "metrics": {
+          "recovery": 0.9285,
+          "mean_posterior_A": 0.9051814929338832,
+          "mean_max_posterior": 0.9284595417143711,
+          "confidence_ge_0_95": 0.674
+        }
+      },
+      {
+        "design": "diagnostic",
+        "truth": "A",
+        "seed": 10106,
+        "histogram": [
+          113,
+          261,
+          305,
+          210,
+          81,
+          27,
+          3,
+          0,
+          0
+        ],
+        "metrics": {
+          "recovery": 0.9295,
+          "mean_posterior_A": 0.9071423185645099,
+          "mean_max_posterior": 0.9316691478328026,
+          "confidence_ge_0_95": 0.682
+        }
+      },
+      {
+        "design": "diagnostic",
+        "truth": "A",
+        "seed": 10107,
+        "histogram": [
+          100,
+          274,
+          313,
+          193,
+          99,
+          15,
+          5,
+          1,
+          0
+        ],
+        "metrics": {
+          "recovery": 0.9295,
+          "mean_posterior_A": 0.9075546905799604,
+          "mean_max_posterior": 0.9254299996344207,
+          "confidence_ge_0_95": 0.693
+        }
+      },
+      {
+        "design": "diagnostic",
+        "truth": "A",
+        "seed": 10108,
+        "histogram": [
+          105,
+          253,
+          310,
+          206,
+          88,
+          32,
+          6,
+          0,
+          0
+        ],
+        "metrics": {
+          "recovery": 0.918,
+          "mean_posterior_A": 0.896530106365223,
+          "mean_max_posterior": 0.9279837649018083,
+          "confidence_ge_0_95": 0.674
+        }
+      },
+      {
+        "design": "diagnostic",
+        "truth": "A",
+        "seed": 10109,
+        "histogram": [
+          96,
+          268,
+          321,
+          217,
+          69,
+          23,
+          6,
+          0,
+          0
+        ],
+        "metrics": {
+          "recovery": 0.9365,
+          "mean_posterior_A": 0.9128767836116233,
+          "mean_max_posterior": 0.9371304421482086,
+          "confidence_ge_0_95": 0.691
+        }
+      },
+      {
+        "design": "diagnostic",
+        "truth": "B",
+        "seed": 10110,
+        "histogram": [
+          0,
+          0,
+          4,
+          24,
+          77,
+          190,
+          356,
+          249,
+          100
+        ],
+        "metrics": {
+          "recovery": 0.9335,
+          "mean_posterior_A": 0.08774901807356451,
+          "mean_max_posterior": 0.9353534209508257,
+          "confidence_ge_0_95": 0.709
+        }
+      },
+      {
+        "design": "diagnostic",
+        "truth": "B",
+        "seed": 10111,
+        "histogram": [
+          0,
+          0,
+          3,
+          32,
+          87,
+          211,
+          318,
+          236,
+          113
+        ],
+        "metrics": {
+          "recovery": 0.9215,
+          "mean_posterior_A": 0.10058197144551347,
+          "mean_max_posterior": 0.9279448578227792,
+          "confidence_ge_0_95": 0.67
+        }
+      },
+      {
+        "design": "diagnostic",
+        "truth": "B",
+        "seed": 10112,
+        "histogram": [
+          0,
+          0,
+          5,
+          33,
+          79,
+          210,
+          329,
+          252,
+          92
+        ],
+        "metrics": {
+          "recovery": 0.9225,
+          "mean_posterior_A": 0.09951044510746553,
+          "mean_max_posterior": 0.9317676036730222,
+          "confidence_ge_0_95": 0.678
+        }
+      },
+      {
+        "design": "diagnostic",
+        "truth": "B",
+        "seed": 10113,
+        "histogram": [
+          0,
+          0,
+          1,
+          28,
+          95,
+          200,
+          324,
+          267,
+          85
+        ],
+        "metrics": {
+          "recovery": 0.9235,
+          "mean_posterior_A": 0.09801773118277708,
+          "mean_max_posterior": 0.9253578785733205,
+          "confidence_ge_0_95": 0.677
+        }
+      },
+      {
+        "design": "diagnostic",
+        "truth": "B",
+        "seed": 10114,
+        "histogram": [
+          0,
+          1,
+          1,
+          19,
+          72,
+          195,
+          316,
+          280,
+          116
+        ],
+        "metrics": {
+          "recovery": 0.943,
+          "mean_posterior_A": 0.07884133273279224,
+          "mean_max_posterior": 0.9383315372972779,
+          "confidence_ge_0_95": 0.714
+        }
+      },
+      {
+        "design": "diagnostic",
+        "truth": "B",
+        "seed": 10115,
+        "histogram": [
+          0,
+          1,
+          4,
+          28,
+          77,
+          223,
+          305,
+          262,
+          100
+        ],
+        "metrics": {
+          "recovery": 0.9285,
+          "mean_posterior_A": 0.0950435052102167,
+          "mean_max_posterior": 0.9322561940881462,
+          "confidence_ge_0_95": 0.672
+        }
+      },
+      {
+        "design": "diagnostic",
+        "truth": "B",
+        "seed": 10116,
+        "histogram": [
+          0,
+          0,
+          7,
+          21,
+          93,
+          197,
+          309,
+          279,
+          94
+        ],
+        "metrics": {
+          "recovery": 0.9255,
+          "mean_posterior_A": 0.09617944351103505,
+          "mean_max_posterior": 0.9274498247816478,
+          "confidence_ge_0_95": 0.689
+        }
+      },
+      {
+        "design": "diagnostic",
+        "truth": "B",
+        "seed": 10117,
+        "histogram": [
+          0,
+          1,
+          2,
+          27,
+          70,
+          246,
+          316,
+          242,
+          96
+        ],
+        "metrics": {
+          "recovery": 0.935,
+          "mean_posterior_A": 0.09107403496505562,
+          "mean_max_posterior": 0.9334744448211121,
+          "confidence_ge_0_95": 0.657
+        }
+      },
+      {
+        "design": "diagnostic",
+        "truth": "B",
+        "seed": 10118,
+        "histogram": [
+          0,
+          0,
+          4,
+          22,
+          81,
+          222,
+          313,
+          253,
+          105
+        ],
+        "metrics": {
+          "recovery": 0.9335,
+          "mean_posterior_A": 0.09063086924453309,
+          "mean_max_posterior": 0.9308715697798572,
+          "confidence_ge_0_95": 0.675
+        }
+      },
+      {
+        "design": "diagnostic",
+        "truth": "B",
+        "seed": 10119,
+        "histogram": [
+          0,
+          0,
+          2,
+          19,
+          88,
+          206,
+          331,
+          263,
+          91
+        ],
+        "metrics": {
+          "recovery": 0.935,
+          "mean_posterior_A": 0.08808633681780906,
+          "mean_max_posterior": 0.929064882694386,
+          "confidence_ge_0_95": 0.687
+        }
+      },
+      {
+        "design": "diagnostic",
+        "truth": "C",
+        "seed": 10120,
+        "histogram": [
+          4,
+          38,
+          81,
+          227,
+          290,
+          224,
+          108,
+          25,
+          3
+        ],
+        "metrics": {
+          "recovery": null,
+          "mean_posterior_A": 0.4950113076809416,
+          "mean_max_posterior": 0.8075077538334138,
+          "confidence_ge_0_95": 0.259
+        }
+      },
+      {
+        "design": "diagnostic",
+        "truth": "C",
+        "seed": 10121,
+        "histogram": [
+          1,
+          35,
+          113,
+          204,
+          281,
+          216,
+          106,
+          40,
+          4
+        ],
+        "metrics": {
+          "recovery": null,
+          "mean_posterior_A": 0.4946219406390997,
+          "mean_max_posterior": 0.8147257666038393,
+          "confidence_ge_0_95": 0.299
+        }
+      },
+      {
+        "design": "diagnostic",
+        "truth": "C",
+        "seed": 10122,
+        "histogram": [
+          6,
+          38,
+          89,
+          218,
+          276,
+          224,
+          111,
+          36,
+          2
+        ],
+        "metrics": {
+          "recovery": null,
+          "mean_posterior_A": 0.48986494338664643,
+          "mean_max_posterior": 0.8152583866062365,
+          "confidence_ge_0_95": 0.282
+        }
+      },
+      {
+        "design": "diagnostic",
+        "truth": "C",
+        "seed": 10123,
+        "histogram": [
+          3,
+          32,
+          109,
+          230,
+          284,
+          207,
+          100,
+          34,
+          1
+        ],
+        "metrics": {
+          "recovery": null,
+          "mean_posterior_A": 0.5135926788433399,
+          "mean_max_posterior": 0.8116601989830381,
+          "confidence_ge_0_95": 0.279
+        }
+      },
+      {
+        "design": "diagnostic",
+        "truth": "C",
+        "seed": 10124,
+        "histogram": [
+          4,
+          27,
+          112,
+          198,
+          294,
+          215,
+          116,
+          32,
+          2
+        ],
+        "metrics": {
+          "recovery": null,
+          "mean_posterior_A": 0.4897553250177469,
+          "mean_max_posterior": 0.8088377759219343,
+          "confidence_ge_0_95": 0.293
+        }
+      },
+      {
+        "design": "diagnostic",
+        "truth": "C",
+        "seed": 10125,
+        "histogram": [
+          0,
+          26,
+          117,
+          224,
+          255,
+          232,
+          107,
+          36,
+          3
+        ],
+        "metrics": {
+          "recovery": null,
+          "mean_posterior_A": 0.49519220458831453,
+          "mean_max_posterior": 0.8240829039983878,
+          "confidence_ge_0_95": 0.289
+        }
+      },
+      {
+        "design": "diagnostic",
+        "truth": "C",
+        "seed": 10126,
+        "histogram": [
+          5,
+          28,
+          119,
+          213,
+          271,
+          208,
+          120,
+          32,
+          4
+        ],
+        "metrics": {
+          "recovery": null,
+          "mean_posterior_A": 0.5000175221814428,
+          "mean_max_posterior": 0.8194018025397675,
+          "confidence_ge_0_95": 0.308
+        }
+      },
+      {
+        "design": "diagnostic",
+        "truth": "C",
+        "seed": 10127,
+        "histogram": [
+          4,
+          39,
+          111,
+          218,
+          259,
+          230,
+          108,
+          26,
+          5
+        ],
+        "metrics": {
+          "recovery": null,
+          "mean_posterior_A": 0.5026457588075315,
+          "mean_max_posterior": 0.8229388556637234,
+          "confidence_ge_0_95": 0.293
+        }
+      },
+      {
+        "design": "diagnostic",
+        "truth": "C",
+        "seed": 10128,
+        "histogram": [
+          3,
+          38,
+          116,
+          220,
+          255,
+          227,
+          102,
+          34,
+          5
+        ],
+        "metrics": {
+          "recovery": null,
+          "mean_posterior_A": 0.5050240936257546,
+          "mean_max_posterior": 0.8250416141371419,
+          "confidence_ge_0_95": 0.298
+        }
+      },
+      {
+        "design": "diagnostic",
+        "truth": "C",
+        "seed": 10129,
+        "histogram": [
+          4,
+          30,
+          108,
+          206,
+          276,
+          219,
+          117,
+          34,
+          6
+        ],
+        "metrics": {
+          "recovery": null,
+          "mean_posterior_A": 0.48741554033474227,
+          "mean_max_posterior": 0.8166669024024664,
+          "confidence_ge_0_95": 0.299
+        }
+      }
+    ]
+  },
+  "limitations": [
+    "Protocol omits explicit design_index/truth_index label order; comparison run must supply an explicit design order matching author provenance.",
+    "Protocol posterior mean metric does not name posterior_A vs maximum; both reported.",
+    "No subject, session, stimulus-domain holdout or empirical causal inference."
+  ],
+  "elapsed_seconds": 0.25068113500310574
+}

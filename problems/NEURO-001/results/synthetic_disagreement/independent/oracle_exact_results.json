@@ -1,0 +1,692 @@
+{
+  "identity": "Independent verifier, separate session; protocol-first implementation before viewing author code/results",
+  "scope": "Synthetic unit baseline only. Parent empirical NEURO-001 remains OPEN.",
+  "protocol_sha256": "6cd7879947d13de6c7b92b0e91974769157dfbddcef844ed21d8e03a0cac9bfa",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "selected_input": {
+    "rational": "-1",
+    "float": -1.0
+  },
+  "grid_scores": [
+    [
+      {
+        "rational": "-1",
+        "float": -1.0
+      },
+      0.18872187554086717
+    ],
+    [
+      {
+        "rational": "-3/4",
+        "float": -0.75
+      },
+      0.10396176746544256
+    ],
+    [
+      {
+        "rational": "-1/2",
+        "float": -0.5
+      },
+      0.04556599707503506
+    ],
+    [
+      {
+        "rational": "-1/4",
+        "float": -0.25
+      },
+      0.011300591711502508
+    ],
+    [
+      {
+        "rational": "0",
+        "float": 0.0
+      },
+      0.0
+    ],
+    [
+      {
+        "rational": "1/4",
+        "float": 0.25
+      },
+      0.0
+    ],
+    [
+      {
+        "rational": "1/2",
+        "float": 0.5
+      },
+      0.0
+    ],
+    [
+      {
+        "rational": "3/4",
+        "float": 0.75
+      },
+      0.0
+    ],
+    [
+      {
+        "rational": "1",
+        "float": 1.0
+      },
+      0.0
+    ]
+  ],
+  "designs": {
+    "diagnostic": {
+      "probability_A": {
+        "rational": "1/4",
+        "float": 0.25
+      },
+      "probability_B": {
+        "rational": "3/4",
+        "float": 0.75
+      },
+      "sequence_length": 8,
+      "count_masses": {
+        "A": [
+          {
+            "rational": "6561/65536",
+            "float": 0.1001129150390625
+          },
+          {
+            "rational": "2187/8192",
+            "float": 0.2669677734375
+          },
+          {
+            "rational": "5103/16384",
+            "float": 0.31146240234375
+          },
+          {
+            "rational": "1701/8192",
+            "float": 0.2076416015625
+          },
+          {
+            "rational": "2835/32768",
+            "float": 0.086517333984375
+          },
+          {
+            "rational": "189/8192",
+            "float": 0.0230712890625
+          },
+          {
+            "rational": "63/16384",
+            "float": 0.00384521484375
+          },
+          {
+            "rational": "3/8192",
+            "float": 0.0003662109375
+          },
+          {
+            "rational": "1/65536",
+            "float": 1.52587890625e-05
+          }
+        ],
+        "B": [
+          {
+            "rational": "1/65536",
+            "float": 1.52587890625e-05
+          },
+          {
+            "rational": "3/8192",
+            "float": 0.0003662109375
+          },
+          {
+            "rational": "63/16384",
+            "float": 0.00384521484375
+          },
+          {
+            "rational": "189/8192",
+            "float": 0.0230712890625
+          },
+          {
+            "rational": "2835/32768",
+            "float": 0.086517333984375
+          },
+          {
+            "rational": "1701/8192",
+            "float": 0.2076416015625
+          },
+          {
+            "rational": "5103/16384",
+            "float": 0.31146240234375
+          },
+          {
+            "rational": "2187/8192",
+            "float": 0.2669677734375
+          },
+          {
+            "rational": "6561/65536",
+            "float": 0.1001129150390625
+          }
+        ],
+        "C": [
+          {
+            "rational": "1/256",
+            "float": 0.00390625
+          },
+          {
+            "rational": "1/32",
+            "float": 0.03125
+          },
+          {
+            "rational": "7/64",
+            "float": 0.109375
+          },
+          {
+            "rational": "7/32",
+            "float": 0.21875
+          },
+          {
+            "rational": "35/128",
+            "float": 0.2734375
+          },
+          {
+            "rational": "7/32",
+            "float": 0.21875
+          },
+          {
+            "rational": "7/64",
+            "float": 0.109375
+          },
+          {
+            "rational": "1/32",
+            "float": 0.03125
+          },
+          {
+            "rational": "1/256",
+            "float": 0.00390625
+          }
+        ]
+      },
+      "posterior_A_by_k": [
+        {
+          "rational": "6561/6562",
+          "float": 0.999847607436757
+        },
+        {
+          "rational": "729/730",
+          "float": 0.9986301369863013
+        },
+        {
+          "rational": "81/82",
+          "float": 0.9878048780487805
+        },
+        {
+          "rational": "9/10",
+          "float": 0.9
+        },
+        {
+          "rational": "1/2",
+          "float": 0.5
+        },
+        {
+          "rational": "1/10",
+          "float": 0.1
+        },
+        {
+          "rational": "1/82",
+          "float": 0.012195121951219513
+        },
+        {
+          "rational": "1/730",
+          "float": 0.0013698630136986301
+        },
+        {
+          "rational": "1/6562",
+          "float": 0.00015239256324291374
+        }
+      ],
+      "model_recovery": {
+        "A": {
+          "rational": "3807/4096",
+          "float": 0.929443359375
+        },
+        "B": {
+          "rational": "3807/4096",
+          "float": 0.929443359375
+        }
+      },
+      "equal_prior_recovery": {
+        "rational": "3807/4096",
+        "float": 0.929443359375
+      },
+      "EIG_bits": 0.7710929067550158,
+      "mean_posterior_A": {
+        "A": {
+          "rational": "17810681/19640066",
+          "float": 0.9068544372508728
+        },
+        "B": {
+          "rational": "1829385/19640066",
+          "float": 0.09314556274912722
+        },
+        "C": {
+          "rational": "1/2",
+          "float": 0.5
+        }
+      },
+      "mean_max_posterior": {
+        "A": {
+          "rational": "3807/4096",
+          "float": 0.929443359375
+        },
+        "B": {
+          "rational": "3807/4096",
+          "float": 0.929443359375
+        },
+        "C": {
+          "rational": "641661979/785602640",
+          "float": 0.8167767600679142
+        }
+      },
+      "confidence_ge_0_95": {
+        "A": {
+          "rational": "22373/32768",
+          "float": 0.682769775390625
+        },
+        "B": {
+          "rational": "22373/32768",
+          "float": 0.682769775390625
+        },
+        "C": {
+          "rational": "37/128",
+          "float": 0.2890625
+        }
+      }
+    },
+    "ordinary": {
+      "probability_A": {
+        "rational": "5/8",
+        "float": 0.625
+      },
+      "probability_B": {
+        "rational": "5/8",
+        "float": 0.625
+      },
+      "sequence_length": 8,
+      "count_masses": {
+        "A": [
+          {
+            "rational": "6561/16777216",
+            "float": 0.0003910660743713379
+          },
+          {
+            "rational": "10935/2097152",
+            "float": 0.005214214324951172
+          },
+          {
+            "rational": "127575/4194304",
+            "float": 0.030416250228881836
+          },
+          {
+            "rational": "212625/2097152",
+            "float": 0.10138750076293945
+          },
+          {
+            "rational": "1771875/8388608",
+            "float": 0.21122395992279053
+          },
+          {
+            "rational": "590625/2097152",
+            "float": 0.2816319465637207
+          },
+          {
+            "rational": "984375/4194304",
+            "float": 0.23469328880310059
+          },
+          {
+            "rational": "234375/2097152",
+            "float": 0.11175870895385742
+          },
+          {
+            "rational": "390625/16777216",
+            "float": 0.023283064365386963
+          }
+        ],
+        "B": [
+          {
+            "rational": "6561/16777216",
+            "float": 0.0003910660743713379
+          },
+          {
+            "rational": "10935/2097152",
+            "float": 0.005214214324951172
+          },
+          {
+            "rational": "127575/4194304",
+            "float": 0.030416250228881836
+          },
+          {
+            "rational": "212625/2097152",
+            "float": 0.10138750076293945
+          },
+          {
+            "rational": "1771875/8388608",
+            "float": 0.21122395992279053
+          },
+          {
+            "rational": "590625/2097152",
+            "float": 0.2816319465637207
+          },
+          {
+            "rational": "984375/4194304",
+            "float": 0.23469328880310059
+          },
+          {
+            "rational": "234375/2097152",
+            "float": 0.11175870895385742
+          },
+          {
+            "rational": "390625/16777216",
+            "float": 0.023283064365386963
+          }
+        ],
+        "C": [
+          {
+            "rational": "1/256",
+            "float": 0.00390625
+          },
+          {
+            "rational": "1/32",
+            "float": 0.03125
+          },
+          {
+            "rational": "7/64",
+            "float": 0.109375
+          },
+          {
+            "rational": "7/32",
+            "float": 0.21875
+          },
+          {
+            "rational": "35/128",
+            "float": 0.2734375
+          },
+          {
+            "rational": "7/32",
+            "float": 0.21875
+          },
+          {
+            "rational": "7/64",
+            "float": 0.109375
+          },
+          {
+            "rational": "1/32",
+            "float": 0.03125
+          },
+          {
+            "rational": "1/256",
+            "float": 0.00390625
+          }
+        ]
+      },
+      "posterior_A_by_k": [
+        {
+          "rational": "1/2",
+          "float": 0.5
+        },
+        {
+          "rational": "1/2",
+          "float": 0.5
+        },
+        {
+          "rational": "1/2",
+          "float": 0.5
+        },
+        {
+          "rational": "1/2",
+          "float": 0.5
+        },
+        {
+          "rational": "1/2",
+          "float": 0.5
+        },
+        {
+          "rational": "1/2",
+          "float": 0.5
+        },
+        {
+          "rational": "1/2",
+          "float": 0.5
+        },
+        {
+          "rational": "1/2",
+          "float": 0.5
+        },
+        {
+          "rational": "1/2",
+          "float": 0.5
+        }
+      ],
+      "model_recovery": {
+        "A": {
+          "rational": "1/2",
+          "float": 0.5
+        },
+        "B": {
+          "rational": "1/2",
+          "float": 0.5
+        }
+      },
+      "equal_prior_recovery": {
+        "rational": "1/2",
+        "float": 0.5
+      },
+      "EIG_bits": 0.0,
+      "mean_posterior_A": {
+        "A": {
+          "rational": "1/2",
+          "float": 0.5
+        },
+        "B": {
+          "rational": "1/2",
+          "float": 0.5
+        },
+        "C": {
+          "rational": "1/2",
+          "float": 0.5
+        }
+      },
+      "mean_max_posterior": {
+        "A": {
+          "rational": "1/2",
+          "float": 0.5
+        },
+        "B": {
+          "rational": "1/2",
+          "float": 0.5
+        },
+        "C": {
+          "rational": "1/2",
+          "float": 0.5
+        }
+      },
+      "confidence_ge_0_95": {
+        "A": {
+          "rational": "0",
+          "float": 0.0
+        },
+        "B": {
+          "rational": "0",
+          "float": 0.0
+        },
+        "C": {
+          "rational": "0",
+          "float": 0.0
+        }
+      }
+    }
+  },
+  "identical_controls": [
+    {
+      "x": {
+        "rational": "-1",
+        "float": -1.0
+      },
+      "EIG_bits": 0.0,
+      "recovery": {
+        "rational": "1/2",
+        "float": 0.5
+      }
+    },
+    {
+      "x": {
+        "rational": "-3/4",
+        "float": -0.75
+      },
+      "EIG_bits": 0.0,
+      "recovery": {
+        "rational": "1/2",
+        "float": 0.5
+      }
+    },
+    {
+      "x": {
+        "rational": "-1/2",
+        "float": -0.5
+      },
+      "EIG_bits": 0.0,
+      "recovery": {
+        "rational": "1/2",
+        "float": 0.5
+      }
+    },
+    {
+      "x": {
+        "rational": "-1/4",
+        "float": -0.25
+      },
+      "EIG_bits": 0.0,
+      "recovery": {
+        "rational": "1/2",
+        "float": 0.5
+      }
+    },
+    {
+      "x": {
+        "rational": "0",
+        "float": 0.0
+      },
+      "EIG_bits": 0.0,
+      "recovery": {
+        "rational": "1/2",
+        "float": 0.5
+      }
+    },
+    {
+      "x": {
+        "rational": "1/4",
+        "float": 0.25
+      },
+      "EIG_bits": 0.0,
+      "recovery": {
+        "rational": "1/2",
+        "float": 0.5
+      }
+    },
+    {
+      "x": {
+        "rational": "1/2",
+        "float": 0.5
+      },
+      "EIG_bits": 0.0,
+      "recovery": {
+        "rational": "1/2",
+        "float": 0.5
+      }
+    },
+    {
+      "x": {
+        "rational": "3/4",
+        "float": 0.75
+      },
+      "EIG_bits": 0.0,
+      "recovery": {
+        "rational": "1/2",
+        "float": 0.5
+      }
+    },
+    {
+      "x": {
+        "rational": "1",
+        "float": 1.0
+      },
+      "EIG_bits": 0.0,
+      "recovery": {
+        "rational": "1/2",
+        "float": 0.5
+      }
+    }
+  ],
+  "invalid_controls": [
+    {
+      "test": "invalid x Fraction(-5, 4)",
+      "result": "PASS_REJECTED"
+    },
+    {
+      "test": "invalid x Fraction(5, 4)",
+      "result": "PASS_REJECTED"
+    },
+    {
+      "test": "invalid x nan",
+      "result": "PASS_REJECTED"
+    },
+    {
+      "test": "invalid x inf",
+      "result": "PASS_REJECTED"
+    },
+    {
+      "test": "invalid x '1/2'",
+      "result": "PASS_REJECTED"
+    },
+    {
+      "test": "invalid probability Fraction(-1, 100)",
+      "result": "PASS_REJECTED"
+    },
+    {
+      "test": "invalid probability Fraction(101, 100)",
+      "result": "PASS_REJECTED"
+    },
+    {
+      "test": "invalid probability nan",
+      "result": "PASS_REJECTED"
+    },
+    {
+      "test": "invalid probability inf",
+      "result": "PASS_REJECTED"
+    },
+    {
+      "test": "invalid sequence length 0",
+      "result": "PASS_REJECTED"
+    },
+    {
+      "test": "invalid sequence length -1",
+      "result": "PASS_REJECTED"
+    },
+    {
+      "test": "invalid sequence length 9",
+      "result": "PASS_REJECTED"
+    },
+    {
+      "test": "invalid sequence length 1.5",
+      "result": "PASS_REJECTED"
+    },
+    {
+      "test": "invalid sequence length True",
+      "result": "PASS_REJECTED"
+    },
+    {
+      "test": "invalid response",
+      "result": "PASS_REJECTED"
+    }
+  ],
+  "simulations_by_design_index_mapping": {},
+  "limitations": [
+    "Protocol omits explicit design_index/truth_index label order; comparison run must supply an explicit design order matching author provenance.",
+    "Protocol posterior mean metric does not name posterior_A vs maximum; both reported.",
+    "No subject, session, stimulus-domain holdout or empirical causal inference."
+  ],
+  "elapsed_seconds": 0.181626044010045
+}

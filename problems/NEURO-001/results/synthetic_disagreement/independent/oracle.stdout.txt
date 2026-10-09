@@ -1,0 +1,8 @@
+PASS protocol hash 6cd7879947d13de6c7b92b0e91974769157dfbddcef844ed21d8e03a0cac9bfa
+Selected x: -1 single-response EIG bits: 0.18872187554086717
+diagnostic n=8 recovery: 3807/4096 = 0.929443359375 EIG bits: 0.7710929067550158
+diagnostic C mean posterior A: 1/2 C mean maximum posterior: 0.8167767600679142 C confidence >=0.95: 37/128
+ordinary n=8 recovery: 1/2 = 0.5 EIG bits: 0.0
+ordinary C mean posterior A: 1/2 C mean maximum posterior: 0.5 C confidence >=0.95: 0
+PASS 9 identical-model cases; 15 invalid-input controls; 60 independent seeded histograms
+Output: /workspace/shared/frontier-neuro-independent/oracle_results.json elapsed_seconds: 0.25068113500310574

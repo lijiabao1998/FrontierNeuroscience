@@ -1,0 +1,145 @@
+{
+  "selected_x": "-1",
+  "designs": [
+    {
+      "name": "ordinary",
+      "x": "1/2",
+      "pA": "5/8",
+      "pB": "5/8",
+      "eig8": 0.0,
+      "truths": {
+        "A": {
+          "recovery_fraction": "1/2",
+          "recovery": 0.5,
+          "mean_posterior_A": 0.5,
+          "high_confidence": 0.0,
+          "high_confidence_fraction": "0",
+          "binomial_mass": [
+            "6561/16777216",
+            "10935/2097152",
+            "127575/4194304",
+            "212625/2097152",
+            "1771875/8388608",
+            "590625/2097152",
+            "984375/4194304",
+            "234375/2097152",
+            "390625/16777216"
+          ]
+        },
+        "B": {
+          "recovery_fraction": "1/2",
+          "recovery": 0.5,
+          "mean_posterior_A": 0.5,
+          "high_confidence": 0.0,
+          "high_confidence_fraction": "0",
+          "binomial_mass": [
+            "6561/16777216",
+            "10935/2097152",
+            "127575/4194304",
+            "212625/2097152",
+            "1771875/8388608",
+            "590625/2097152",
+            "984375/4194304",
+            "234375/2097152",
+            "390625/16777216"
+          ]
+        },
+        "C": {
+          "recovery_fraction": null,
+          "recovery": null,
+          "mean_posterior_A": 0.5,
+          "high_confidence": 0.0,
+          "high_confidence_fraction": "0",
+          "binomial_mass": [
+            "1/256",
+            "1/32",
+            "7/64",
+            "7/32",
+            "35/128",
+            "7/32",
+            "7/64",
+            "1/32",
+            "1/256"
+          ]
+        }
+      },
+      "equal_prior_recovery": 0.5
+    },
+    {
+      "name": "diagnostic",
+      "x": "-1",
+      "pA": "1/4",
+      "pB": "3/4",
+      "eig8": 0.7710929067550158,
+      "truths": {
+        "A": {
+          "recovery_fraction": "3807/4096",
+          "recovery": 0.929443359375,
+          "mean_posterior_A": 0.9068544372508728,
+          "high_confidence": 0.682769775390625,
+          "high_confidence_fraction": "22373/32768",
+          "binomial_mass": [
+            "6561/65536",
+            "2187/8192",
+            "5103/16384",
+            "1701/8192",
+            "2835/32768",
+            "189/8192",
+            "63/16384",
+            "3/8192",
+            "1/65536"
+          ]
+        },
+        "B": {
+          "recovery_fraction": "3807/4096",
+          "recovery": 0.929443359375,
+          "mean_posterior_A": 0.09314556274912722,
+          "high_confidence": 0.682769775390625,
+          "high_confidence_fraction": "22373/32768",
+          "binomial_mass": [
+            "1/65536",
+            "3/8192",
+            "63/16384",
+            "189/8192",
+            "2835/32768",
+            "1701/8192",
+            "5103/16384",
+            "2187/8192",
+            "6561/65536"
+          ]
+        },
+        "C": {
+          "recovery_fraction": null,
+          "recovery": null,
+          "mean_posterior_A": 0.5,
+          "high_confidence": 0.2890625,
+          "high_confidence_fraction": "37/128",
+          "binomial_mass": [
+            "1/256",
+            "1/32",
+            "7/64",
+            "7/32",
+            "35/128",
+            "7/32",
+            "7/64",
+            "1/32",
+            "1/256"
+          ]
+        }
+      },
+      "equal_prior_recovery": 0.929443359375
+    }
+  ],
+  "controls": {
+    "positive_domain_identical": true,
+    "identical_model_null": true,
+    "invalid_x": true,
+    "invalid_model": true,
+    "invalid_probability": true,
+    "diagnostic_gain_at_least_0_1": true,
+    "mc_consistency": true,
+    "tampered_histogram_rejected": true
+  },
+  "runtime_seconds": 0.14075762599532027,
+  "independent_verification": "PENDING"
+}
