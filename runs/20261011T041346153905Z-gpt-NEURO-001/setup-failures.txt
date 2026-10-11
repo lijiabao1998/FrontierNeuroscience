@@ -1,0 +1,1 @@
+2026-10-11T04:14:57Z: Embedding public GitHub claim JSON directly into Python raised NameError on false after the new protocol and round were written, before code freeze or computation. Subsequent metadata admission passed. Public claim JSON then serialized through json.loads, code freeze completed. No experiment had run.

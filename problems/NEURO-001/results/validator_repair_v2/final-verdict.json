@@ -1,0 +1,27 @@
+{
+  "state": "PASS_FINITE_INDEPENDENT_REVIEW",
+  "completed_at": "2026-10-11T04:26:23.562492+00:00",
+  "round_id": "20261011T041346153905Z-gpt-NEURO-001",
+  "source_commit": "65dbef8313d4c9170f0cdcf119901eeb76bb0434",
+  "author_checks": {
+    "passed": 53,
+    "total": 53
+  },
+  "independent_checks": {
+    "passed": 82,
+    "total": 82
+  },
+  "declared_report_mutations_rejected": 21,
+  "additional_unseen_report_mutations_rejected": 8,
+  "seeded_configurations": 60,
+  "seeded_passes_used": 4,
+  "guarded_exact_calls_used": 63,
+  "maximum_absolute_numeric_difference": 1.1102230246251565e-16,
+  "original_verdict": "FAILED/INCOMPLETE",
+  "problem_status": "OPEN",
+  "claim_scope": "finite artifact-integrity repair and synthetic numerical reproduction only",
+  "new_neuroscience_discovery": false,
+  "publication_status": "LOCAL_ONLY_AFTER_ACCEPTED_SCOPE_CLAIM",
+  "public_claim_url": "https://github.com/lijiabao1998/FrontierNeuroscience/pull/4#issuecomment-6105335060",
+  "limits": "No empirical neuroscience, mechanistic exclusion, subject/session/stimulus-domain holdout, clinical validation, blindness, universal validator security, novelty or parent completion. No branch publication/PR/main merge/deployment performed. Metadata claim integrity and parser-wide finite-float guarantees remain outside accepted scope."
+}

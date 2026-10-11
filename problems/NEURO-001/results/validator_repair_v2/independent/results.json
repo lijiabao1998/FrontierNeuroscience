@@ -1,0 +1,664 @@
+{
+  "verdict": "PASS_FINITE_INDEPENDENT_REVIEW",
+  "checks": [
+    {
+      "name": "frozen_code_hashes",
+      "pass": true,
+      "hashes": {
+        "problems/NEURO-001/experiments/validator_repair_v2/protocol.json": "97ccf1310b31de7cac5b253a58e0a267c7ec97d077fdb430d1f9488082311435",
+        "problems/NEURO-001/experiments/validator_repair_v2/strict_validator.py": "a7e69413be49fcf29d214422bd47cf115a498e4efdee2781b16dc66ac09c9ea3",
+        "problems/NEURO-001/experiments/validator_repair_v2/run_validation.py": "611dd250b2c319906e0b8397a1e3bc0b8078e42f8b282a9ba42155f6d321dfc1",
+        "problems/NEURO-001/experiments/validator_repair_v2/mutations.json": "46f710a00ac514495797076212f503c2b170e3c0c7ab0826a5ad4435aff2d7bd"
+      }
+    },
+    {
+      "name": "expected_protocol_identity",
+      "pass": true
+    },
+    {
+      "name": "original_pinned_inputs",
+      "pass": true
+    },
+    {
+      "name": "exactly_one_seeded_pass",
+      "pass": true
+    },
+    {
+      "name": "candidate_vs_independent_exact_and_rederived_metrics",
+      "pass": true,
+      "float_comparisons": 159,
+      "max_absolute_difference": 1.1102230246251565e-16
+    },
+    {
+      "name": "pinned_original_vs_independent_oracle",
+      "pass": true,
+      "float_comparisons": 159,
+      "max_absolute_difference": 1.1102230246251565e-16
+    },
+    {
+      "name": "pinned_original_accepted",
+      "pass": true,
+      "expected": "ACCEPT",
+      "actual": "ACCEPT",
+      "error": null,
+      "result": {
+        "mathematical_payload": "PASS",
+        "metadata_claims": "NOT_VALIDATED",
+        "scientific_claim": "NONE",
+        "historical_acceptance": "FAILED/INCOMPLETE"
+      },
+      "reason": ""
+    },
+    {
+      "name": "fresh_author_replay_vs_independent_oracle",
+      "pass": true,
+      "float_comparisons": 159,
+      "max_absolute_difference": 1.1102230246251565e-16
+    },
+    {
+      "name": "fresh_author_replay_accepted",
+      "pass": true,
+      "expected": "ACCEPT",
+      "actual": "ACCEPT",
+      "error": null,
+      "result": {
+        "mathematical_payload": "PASS",
+        "metadata_claims": "NOT_VALIDATED",
+        "scientific_claim": "NONE",
+        "historical_acceptance": "FAILED/INCOMPLETE"
+      },
+      "reason": ""
+    },
+    {
+      "name": "all_60_seeded_histograms_equal_pinned_original_and_replay",
+      "pass": true
+    },
+    {
+      "name": "declared_histogram_total",
+      "pass": true,
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "error": "ValueError: $.mc[0].histogram[0]: exact value/type mismatch",
+      "result": null,
+      "reason": ""
+    },
+    {
+      "name": "declared_histogram_total_preserved",
+      "pass": true,
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "error": "ValueError: $.mc[0].histogram[1]: exact value/type mismatch",
+      "result": null,
+      "reason": ""
+    },
+    {
+      "name": "declared_diagnostic_eig",
+      "pass": true,
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "error": "ValueError: $.designs[1].eig8: numerical mismatch",
+      "result": null,
+      "reason": ""
+    },
+    {
+      "name": "declared_outside_C_confidence",
+      "pass": true,
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "error": "ValueError: $.designs[1].truths.C.high_confidence: numerical mismatch",
+      "result": null,
+      "reason": ""
+    },
+    {
+      "name": "declared_ordinary_nan",
+      "pass": true,
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "error": "ValueError: $.designs[0].eig8: expected finite numeric value",
+      "result": null,
+      "reason": ""
+    },
+    {
+      "name": "declared_selected_input",
+      "pass": true,
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "error": "ValueError: $.selected_x: exact value/type mismatch",
+      "result": null,
+      "reason": ""
+    },
+    {
+      "name": "declared_duplicate_seed",
+      "pass": true,
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "error": "ValueError: $.mc[1].seed: exact value/type mismatch",
+      "result": null,
+      "reason": ""
+    },
+    {
+      "name": "declared_negative_histogram",
+      "pass": true,
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "error": "ValueError: $.mc[0].histogram[0]: exact value/type mismatch",
+      "result": null,
+      "reason": ""
+    },
+    {
+      "name": "declared_noninteger_histogram",
+      "pass": true,
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "error": "ValueError: $.mc[0].histogram[0]: exact value/type mismatch",
+      "result": null,
+      "reason": ""
+    },
+    {
+      "name": "declared_missing_configuration",
+      "pass": true,
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "error": "ValueError: $.mc: wrong array shape",
+      "result": null,
+      "reason": ""
+    },
+    {
+      "name": "declared_duplicate_configuration",
+      "pass": true,
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "error": "ValueError: $.mc[1].seed: exact value/type mismatch",
+      "result": null,
+      "reason": ""
+    },
+    {
+      "name": "declared_reordered_designs",
+      "pass": true,
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "error": "ValueError: $.designs[0].name: exact value/type mismatch",
+      "result": null,
+      "reason": ""
+    },
+    {
+      "name": "declared_changed_truth_label",
+      "pass": true,
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "error": "ValueError: $.mc[0].truth: exact value/type mismatch",
+      "result": null,
+      "reason": ""
+    },
+    {
+      "name": "declared_rational_mass",
+      "pass": true,
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "error": "ValueError: $.designs[1].truths.C.binomial_mass[0]: exact value/type mismatch",
+      "result": null,
+      "reason": ""
+    },
+    {
+      "name": "declared_posterior_mean",
+      "pass": true,
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "error": "ValueError: $.designs[1].truths.C.mean_posterior_A: numerical mismatch",
+      "result": null,
+      "reason": ""
+    },
+    {
+      "name": "declared_pooled_estimate",
+      "pass": true,
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "error": "ValueError: $.pooled_mc[0].estimate: numerical mismatch",
+      "result": null,
+      "reason": ""
+    },
+    {
+      "name": "declared_protocol_hash",
+      "pass": true,
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "error": "ValueError: $.protocol_sha256: exact value/type mismatch",
+      "result": null,
+      "reason": ""
+    },
+    {
+      "name": "declared_numeric_boolean",
+      "pass": true,
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "error": "ValueError: $.designs[0].eig8: expected finite numeric value",
+      "result": null,
+      "reason": ""
+    },
+    {
+      "name": "declared_infinity",
+      "pass": true,
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "error": "ValueError: $.designs[1].eig8: expected finite numeric value",
+      "result": null,
+      "reason": ""
+    },
+    {
+      "name": "declared_missing_field",
+      "pass": true,
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "error": "ValueError: $.designs[1].truths.C: wrong object fields",
+      "result": null,
+      "reason": ""
+    },
+    {
+      "name": "declared_unexpected_nested_field",
+      "pass": true,
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "error": "ValueError: $.designs[0]: wrong object fields",
+      "result": null,
+      "reason": ""
+    },
+    {
+      "name": "parser_overflow_boundary_observed",
+      "pass": true,
+      "classification": "OUT_OF_SCOPE_PARSER_LIMITATION",
+      "detail": "Valid JSON numeral 1e400 parses as infinity; report validation must reject it. Strict literal rejection does not ensure all parsed floats are finite."
+    },
+    {
+      "name": "heldout_compensating_pooled_values",
+      "pass": true,
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "error": "ValueError: $.pooled_mc[5].estimate: numerical mismatch",
+      "result": null,
+      "reason": "Estimate and target shifted together; reported abs_error unchanged."
+    },
+    {
+      "name": "heldout_noncanonical_equivalent_rational",
+      "pass": true,
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "error": "ValueError: $.grid[0].x: exact value/type mismatch",
+      "result": null,
+      "reason": "Exact canonical rational-string contract."
+    },
+    {
+      "name": "heldout_histogram_integer_valued_float",
+      "pass": true,
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "error": "ValueError: $.mc[59].histogram[4]: exact value/type mismatch",
+      "result": null,
+      "reason": "Numeric value unchanged; count type violated."
+    },
+    {
+      "name": "heldout_equal_prior_summary_tamper",
+      "pass": true,
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "error": "ValueError: $.designs[1].equal_prior_recovery: numerical mismatch",
+      "result": null,
+      "reason": "Previously unmutated summary metric."
+    },
+    {
+      "name": "heldout_coherent_histogram_metric_rewrite",
+      "pass": true,
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "error": "ValueError: $.mc[30].histogram[0]: exact value/type mismatch",
+      "result": null,
+      "reason": "Totals, per-seed metrics and affected pooled summaries recomputed coherently."
+    },
+    {
+      "name": "heldout_outside_family_recovery_invention",
+      "pass": true,
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "error": "ValueError: $.designs[1].truths.C.recovery_fraction: exact value/type mismatch",
+      "result": null,
+      "reason": "C is not an A/B candidate; recovery must remain null."
+    },
+    {
+      "name": "heldout_unrecognized_top_level_claim",
+      "pass": true,
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "error": "ValueError: Unexpected or missing top-level fields",
+      "result": null,
+      "reason": "Unrecognized root field."
+    },
+    {
+      "name": "heldout_exponent_overflow_in_math",
+      "pass": true,
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "error": "ValueError: $.designs[0].eig8: expected finite numeric value",
+      "result": null,
+      "reason": "Parser accepts overflow as inf; finite-math guard must reject."
+    },
+    {
+      "name": "heldout_metadata_claim_spoof",
+      "pass": true,
+      "expected": "ACCEPT",
+      "actual": "ACCEPT",
+      "error": null,
+      "result": {
+        "mathematical_payload": "PASS",
+        "metadata_claims": "NOT_VALIDATED",
+        "scientific_claim": "NONE",
+        "historical_acceptance": "FAILED/INCOMPLETE"
+      },
+      "reason": "Known metadata deliberately excluded; returned NOT_VALIDATED and scientific_claim NONE are required."
+    },
+    {
+      "name": "metadata_spoof_not_endorsed",
+      "pass": true
+    },
+    {
+      "name": "strict_json_nested_nan",
+      "pass": true,
+      "error": "Nonfinite JSON literal: NaN"
+    },
+    {
+      "name": "strict_json_metadata_positive_inf",
+      "pass": true,
+      "error": "Nonfinite JSON literal: Infinity"
+    },
+    {
+      "name": "strict_json_array_negative_inf",
+      "pass": true,
+      "error": "Nonfinite JSON literal: -Infinity"
+    },
+    {
+      "name": "strict_json_duplicate_root",
+      "pass": true,
+      "error": "Duplicate JSON key: x"
+    },
+    {
+      "name": "strict_json_duplicate_nested",
+      "pass": true,
+      "error": "Duplicate JSON key: x"
+    },
+    {
+      "name": "strict_json_escaped_duplicate",
+      "pass": true,
+      "error": "Duplicate JSON key: a"
+    },
+    {
+      "name": "guard_0_tiny_negative",
+      "pass": true,
+      "actual": "REJECT",
+      "expected": "REJECT",
+      "error": "ValueError: Probability outside [0,1]"
+    },
+    {
+      "name": "guard_0_tiny_above_one",
+      "pass": true,
+      "actual": "REJECT",
+      "expected": "REJECT",
+      "error": "ValueError: Probability outside [0,1]"
+    },
+    {
+      "name": "guard_0_NaN",
+      "pass": true,
+      "actual": "REJECT",
+      "expected": "REJECT",
+      "error": "ValueError: Nonfinite probability"
+    },
+    {
+      "name": "guard_0_positive_infinity",
+      "pass": true,
+      "actual": "REJECT",
+      "expected": "REJECT",
+      "error": "ValueError: Nonfinite probability"
+    },
+    {
+      "name": "guard_0_negative_infinity",
+      "pass": true,
+      "actual": "REJECT",
+      "expected": "REJECT",
+      "error": "ValueError: Nonfinite probability"
+    },
+    {
+      "name": "guard_0_boolean_false",
+      "pass": true,
+      "actual": "REJECT",
+      "expected": "REJECT",
+      "error": "ValueError: Probability requires rational/integer/finite float"
+    },
+    {
+      "name": "guard_1_tiny_negative",
+      "pass": true,
+      "actual": "REJECT",
+      "expected": "REJECT",
+      "error": "ValueError: Probability outside [0,1]"
+    },
+    {
+      "name": "guard_1_tiny_above_one",
+      "pass": true,
+      "actual": "REJECT",
+      "expected": "REJECT",
+      "error": "ValueError: Probability outside [0,1]"
+    },
+    {
+      "name": "guard_1_NaN",
+      "pass": true,
+      "actual": "REJECT",
+      "expected": "REJECT",
+      "error": "ValueError: Nonfinite probability"
+    },
+    {
+      "name": "guard_1_positive_infinity",
+      "pass": true,
+      "actual": "REJECT",
+      "expected": "REJECT",
+      "error": "ValueError: Nonfinite probability"
+    },
+    {
+      "name": "guard_1_negative_infinity",
+      "pass": true,
+      "actual": "REJECT",
+      "expected": "REJECT",
+      "error": "ValueError: Nonfinite probability"
+    },
+    {
+      "name": "guard_1_boolean_false",
+      "pass": true,
+      "actual": "REJECT",
+      "expected": "REJECT",
+      "error": "ValueError: Probability requires rational/integer/finite float"
+    },
+    {
+      "name": "guard_2_tiny_negative",
+      "pass": true,
+      "actual": "REJECT",
+      "expected": "REJECT",
+      "error": "ValueError: Probability outside [0,1]"
+    },
+    {
+      "name": "guard_2_tiny_above_one",
+      "pass": true,
+      "actual": "REJECT",
+      "expected": "REJECT",
+      "error": "ValueError: Probability outside [0,1]"
+    },
+    {
+      "name": "guard_2_NaN",
+      "pass": true,
+      "actual": "REJECT",
+      "expected": "REJECT",
+      "error": "ValueError: Nonfinite probability"
+    },
+    {
+      "name": "guard_2_positive_infinity",
+      "pass": true,
+      "actual": "REJECT",
+      "expected": "REJECT",
+      "error": "ValueError: Nonfinite probability"
+    },
+    {
+      "name": "guard_2_negative_infinity",
+      "pass": true,
+      "actual": "REJECT",
+      "expected": "REJECT",
+      "error": "ValueError: Nonfinite probability"
+    },
+    {
+      "name": "guard_2_boolean_false",
+      "pass": true,
+      "actual": "REJECT",
+      "expected": "REJECT",
+      "error": "ValueError: Probability requires rational/integer/finite float"
+    },
+    {
+      "name": "guard_unknown_truth",
+      "pass": true,
+      "actual": "REJECT",
+      "expected": "REJECT",
+      "error": "ValueError: Unknown truth label"
+    },
+    {
+      "name": "guard_endpoint_unsupported_even_with_degenerate_truth",
+      "pass": true,
+      "actual": "REJECT",
+      "expected": "REJECT",
+      "error": "ValueError: Undefined candidate posterior at a response count"
+    },
+    {
+      "name": "guard_valid_heldout_0",
+      "pass": true,
+      "actual": "ACCEPT",
+      "expected": "ACCEPT",
+      "error": null
+    },
+    {
+      "name": "guard_valid_heldout_0_independent_exact_match",
+      "pass": true,
+      "float_comparisons": 3,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "guard_valid_heldout_1",
+      "pass": true,
+      "actual": "ACCEPT",
+      "expected": "ACCEPT",
+      "error": null
+    },
+    {
+      "name": "guard_valid_heldout_1_independent_exact_match",
+      "pass": true,
+      "float_comparisons": 2,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "guard_valid_heldout_2",
+      "pass": true,
+      "actual": "ACCEPT",
+      "expected": "ACCEPT",
+      "error": null
+    },
+    {
+      "name": "guard_valid_heldout_2_independent_exact_match",
+      "pass": true,
+      "float_comparisons": 2,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "guard_valid_heldout_3",
+      "pass": true,
+      "actual": "ACCEPT",
+      "expected": "ACCEPT",
+      "error": null
+    },
+    {
+      "name": "guard_valid_heldout_3_independent_exact_match",
+      "pass": true,
+      "float_comparisons": 3,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "guard_valid_heldout_4",
+      "pass": true,
+      "actual": "ACCEPT",
+      "expected": "ACCEPT",
+      "error": null
+    },
+    {
+      "name": "guard_valid_heldout_4_independent_exact_match",
+      "pass": true,
+      "float_comparisons": 3,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "guard_valid_heldout_5",
+      "pass": true,
+      "actual": "ACCEPT",
+      "expected": "ACCEPT",
+      "error": null
+    },
+    {
+      "name": "guard_valid_heldout_5_independent_exact_match",
+      "pass": true,
+      "float_comparisons": 3,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "name": "no_second_seeded_pass",
+      "pass": true,
+      "cache_hits": 32,
+      "cache_misses": 1
+    },
+    {
+      "name": "reviewer_call_budgets",
+      "pass": true
+    }
+  ],
+  "calls": {
+    "report": 32,
+    "parser": 7,
+    "expectation_seeded_pass": 1,
+    "guard_direct": 26,
+    "guard_internal": 6
+  },
+  "scope": "Finite artifact validation only; no biological discovery or parent completion.",
+  "original_acceptance": "FAILED/INCOMPLETE",
+  "started_at": "2026-10-11T04:23:24.481893+00:00",
+  "oracle_sha256": "050df17359d5a1f3a9a3144bb7904ee7e6583e59a0d862d7b85165a477caaa09",
+  "seeded_replay": {
+    "fresh_passes": 1,
+    "configurations": 60,
+    "sequences": 60000,
+    "draws": 480000,
+    "independence": "Actual frozen candidate RNG implementation replayed once; no second independently authored RNG replay. Exact math and count-derived metrics independently authored. Historical replay is separate evidence."
+  },
+  "key_numbers": {
+    "selected_x": "-1",
+    "ordinary_recovery": "1/2",
+    "diagnostic_recovery": "3807/4096",
+    "diagnostic_EIG8_decimal": "0.7710929067550159034164699341471819754793957004471945279606700097698266",
+    "outside_C_high_confidence": "37/128"
+  },
+  "limitations": [
+    "No empirical, neural, clinical, subject/session or unseen stimulus-domain data. Parent NEURO-001 remains OPEN; original acceptance stays FAILED/INCOMPLETE.",
+    "This is an independent implementation and adversarial audit in another agent session, not blinded review: frozen code and historical outputs were read before oracle authorship.",
+    "One actual-candidate seeded replay verifies 60 histograms; new independent exact arithmetic is distinct from the historical independently authored seeded oracle.",
+    "Finite fixtures do not establish universal security, denial-of-service resistance or all-model mathematical correctness.",
+    "Known metadata content is intentionally not validated; consumers must retain NOT_VALIDATED / NONE labels.",
+    "Strict parser rejects named nonfinite literals and duplicate keys but JSON exponent overflow may yield infinity; numerical report fields reject it. Parser-wide finite-float guarantee and metadata numeric safety are not established."
+  ],
+  "source_integrity": {
+    "files_pinned": 78,
+    "changed_existing_files": [],
+    "added_files": [],
+    "all_existing_files_unchanged": true
+  },
+  "completed_at": "2026-10-11T04:23:25.471163+00:00",
+  "elapsed_seconds": 0.9892815339990193,
+  "cpu_seconds": 1.022646091,
+  "maxrss_kib": 14208,
+  "completed_before_deadline": true
+}

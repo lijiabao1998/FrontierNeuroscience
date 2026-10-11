@@ -1,0 +1,23 @@
+[
+ {"name":"histogram_total","op":"add","path":["mc",0,"histogram",0],"value":1,"legacy":true},
+ {"name":"histogram_total_preserved","op":"transfer","path":["mc",0,"histogram"],"legacy":true},
+ {"name":"diagnostic_eig","op":"add","path":["designs",1,"eig8"],"value":0.125,"legacy":true},
+ {"name":"outside_C_confidence","op":"set","path":["designs",1,"truths","C","high_confidence"],"value":0.0,"legacy":true},
+ {"name":"ordinary_nan","op":"nonfinite","path":["designs",0,"eig8"],"value":"nan","legacy":true},
+ {"name":"selected_input","op":"set","path":["selected_x"],"value":"1","legacy":true},
+ {"name":"duplicate_seed","op":"set","path":["mc",1,"seed"],"value":10000,"legacy":true},
+ {"name":"negative_histogram","op":"set","path":["mc",0,"histogram",0],"value":-1},
+ {"name":"noninteger_histogram","op":"set","path":["mc",0,"histogram",0],"value":0.5},
+ {"name":"missing_configuration","op":"delete","path":["mc",0]},
+ {"name":"duplicate_configuration","op":"copy_zero","path":["mc",1]},
+ {"name":"reordered_designs","op":"reverse","path":["designs"]},
+ {"name":"changed_truth_label","op":"set","path":["mc",0,"truth"],"value":"B"},
+ {"name":"rational_mass","op":"set","path":["designs",1,"truths","C","binomial_mass",0],"value":"0"},
+ {"name":"posterior_mean","op":"add","path":["designs",1,"truths","C","mean_posterior_A"],"value":0.01},
+ {"name":"pooled_estimate","op":"add","path":["pooled_mc",0,"estimate"],"value":0.01},
+ {"name":"protocol_hash","op":"set","path":["protocol_sha256"],"value":"0000000000000000000000000000000000000000000000000000000000000000"},
+ {"name":"numeric_boolean","op":"set","path":["designs",0,"eig8"],"value":false},
+ {"name":"infinity","op":"nonfinite","path":["designs",1,"eig8"],"value":"inf"},
+ {"name":"missing_field","op":"delete","path":["designs",1,"truths","C","high_confidence"]},
+ {"name":"unexpected_nested_field","op":"set","path":["designs",0,"unexpected"],"value":0}
+]

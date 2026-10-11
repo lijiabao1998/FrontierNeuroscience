@@ -1,0 +1,125 @@
+{
+  "protocol_id": "NEURO-001-validator-repair-v2",
+  "created_at": "2026-10-11T04:14:57.924645+00:00",
+  "status": "FROZEN_PRE_EXECUTION",
+  "question": "Can a separately versioned strict validator reject retained semantic corruption cases while accepting byte-pinned, numerically reproduced synthetic baseline?",
+  "claim_scope": "Artifact integrity engineering and finite numerical replay only. No new biological, clinical, empirical, or mechanism evidence; original failed acceptance remains FAILED/INCOMPLETE.",
+  "source_commit": "65dbef8313d4c9170f0cdcf119901eeb76bb0434",
+  "main_base": "e257e97a7ee7392eea543f4721ac8baa66837d4e",
+  "governance_pin": "9c3ae2dbaa1c814f3ef451c041dedfe3b77d926f",
+  "untouched": [
+    "original baseline.py",
+    "original protocol.json",
+    "all original results and failure reports",
+    "parent problem card evaluator/statement/completion criteria"
+  ],
+  "inputs": {
+    "original_protocol_sha256": "6cd7879947d13de6c7b92b0e91974769157dfbddcef844ed21d8e03a0cac9bfa",
+    "original_code_sha256": "01e492d41322b4983526635012613dc039d402f005b704eefaf5a03ecc1e02aa",
+    "original_results_sha256": "4cf9f92ad5d522fc9319d37aad7c345f793416ce7089c9f03073777547cb042e"
+  },
+  "frozen_semantics": {
+    "grid": [
+      "-1",
+      "-3/4",
+      "-1/2",
+      "-1/4",
+      "0",
+      "1/4",
+      "1/2",
+      "3/4",
+      "1"
+    ],
+    "model_A": "(2+x)/4",
+    "model_B": "(2+abs(x))/4",
+    "outside_truth_C": "1/2",
+    "equal_prior": [
+      0.5,
+      0.5
+    ],
+    "n": 8,
+    "design_order": [
+      "ordinary",
+      "diagnostic"
+    ],
+    "ordinary_x": "1/2",
+    "selection": "one-response mutual information maximum; smallest x for scores within 1e-14 of maximum",
+    "truth_order": [
+      "A",
+      "B",
+      "C"
+    ],
+    "posterior_mean": "E[P(A|Y)]",
+    "seed_rule": "10000+100*design_index+10*truth_index+seed_index",
+    "seed_index": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "sequences_per_cell": 1000,
+    "response_draws_per_sequence": 8,
+    "holdout": "response-only; no subjects/sessions/unseen stimulus domain"
+  },
+  "implementation": "New standalone standard-library validator recomputes binomial-count exact targets and all 60 seeded histograms. It imports no author baseline code. New guarded exact function validates all probabilities before arithmetic; undefined posterior support must reject. Original code stays unchanged. Historical independent ordered-sequence oracle will be replayed separately if admitted.",
+  "acceptance": [
+    "Verify all original file SHA256 values unchanged before and after.",
+    "Fresh original baseline replay must match every non-runtime/non-platform numerical output and all 60 histograms. Replay runs in a disposable copy, never over original evidence.",
+    "New validator accepts pinned original mathematical payload and new replay; every compared number finite, abs tolerance 1e-12; rational strings and histograms exact.",
+    "Reject seven old report cases: histogram-total change; total-preserving histogram transfer; diagnostic EIG+0.125; diagnostic C confidence=0; ordinary EIG=NaN; selected input=-1 changed to1; duplicate seed.",
+    "Reject additional predeclared cases: negative histogram; noninteger count; missing/duplicate configuration; reordered designs; truth-label change; rational mass tamper; posterior mean tamper; pooled estimate tamper; protocol-hash tamper; numeric bool substitution; infinity; missing mathematical field; unexpected nested field.",
+    "Strict JSON rejects NaN, Infinity, -Infinity and duplicate object keys.",
+    "Probability entry rejects p<0,p>1,NaN,+/-Inf,boolean at each a,b,t parameter; unknown truth; candidate endpoints with unsupported posterior bins. Valid rational interior probability fixtures accept.",
+    "Cross-session reviewer examines protocol and code and independently recalculates exact recovery/EIG and verifies mutation outcomes without importing new validator for mathematical expectations. Review scope and any holdouts reported separately.",
+    "No original failed verdict erased; any new test failure means this candidate is FAILED/INCOMPLETE and preserved. No retuning acceptance or rerunning to hide failed candidate."
+  ],
+  "budget": {
+    "cpu_seconds": 1800,
+    "memory_bytes": 4294967296,
+    "usd": 0,
+    "max_new_scientific_configurations": 0,
+    "max_replayed_scientific_configurations": 60,
+    "max_validator_calls": 100,
+    "max_guarded_input_calls": 64,
+    "wall_minutes": 30,
+    "round_started_at": "2026-10-11T04:13:46.153905+00:00",
+    "hard_deadline": "2026-10-11T04:43:46.153905+00:00",
+    "wall_rule": "All preparation, waiting, execution and review after start count. No extension without a newly documented round.",
+    "max_full_seeded_replay_passes": 4,
+    "replay_pass_allocation": [
+      "one original baseline process",
+      "one cached new-validator expectation process",
+      "one historical cross-implementation oracle process",
+      "at most one independent reviewer seeded replay"
+    ],
+    "max_histogram_sequences_all_passes": 240000,
+    "max_bernoulli_draws_all_passes": 1920000
+  },
+  "stop": "No computation until public scope claim authorized and recorded, protocol frozen, admit succeeded, and reviewer clears material protocol concerns. Stop at budget, unexpected integrity failure, or tested candidate failure; preserve outputs. Operational setup fixes may be retried with logs, never silently revise evidence.",
+  "interpretation": "Passing finite adversarial fixtures does not establish universal validator security, all-model robustness, real neural validity, or new discovery. Historical oracle reuse is cross-implementation replay, not a new independently authored algorithm. Separate current reviewer is required for independent validation label.",
+  "failure_register": [
+    "Prior original six semantic mutations accepted and invalid truth probability accepted; retained as historical failures.",
+    "Setup failed argument-length materialization before execution, then exact blob verification succeeded.",
+    "Exact commit reconstruction initially failed due trailing newline assumption; exact source hash subsequently matched original no-newline message."
+  ],
+  "amendment": "New round after expired unexecuted preparation. Same mathematical specification, mutation fixture definitions, and acceptance. Updated artifact paths/round identity/deadline only. Fresh searches and public claim recorded.",
+  "baseline_replay_exclusions": [
+    "/runtime_seconds",
+    "/environment/python",
+    "/environment/platform"
+  ],
+  "baseline_replay_rule": "All other JSON paths, field sets and values must match byte-pinned original parsed data exactly. Metadata equality is reproduction only, never scientific acceptance.",
+  "freeze_rule": "Hash protocol, strict_validator.py, run_validation.py and mutations.json before first test. No revisions after first test within this round.",
+  "prior_preparation": {
+    "status": "EXPIRED_NOT_RUN",
+    "old_round": "20261010T125311394074Z-gpt-NEURO-001",
+    "scope_and_acceptance": "unchanged from v1.2",
+    "original_path": "/workspace/shared/frontier-human-20261010/neuro_candidate"
+  }
+}

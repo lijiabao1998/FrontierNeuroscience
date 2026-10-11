@@ -1,0 +1,41 @@
+{
+  "review_id": "NEURO-001-independent-review-20261011T0420Z",
+  "frozen_at": "2026-10-11T04:23:18.009080+00:00",
+  "phase": "PRE_EXECUTION",
+  "candidate_protocol_sha256": "97ccf1310b31de7cac5b253a58e0a267c7ec97d077fdb430d1f9488082311435",
+  "reviewer_source_sha256": "276e90528ee99f5c9dc2fffc6780f01020420b3637176469fb4b0ac9b597344f",
+  "budget": {
+    "report_calls": 32,
+    "parser_calls": 7,
+    "real_expected_payload_generation": 1,
+    "all_nonguard_entry_calls": 40,
+    "direct_guards": 26,
+    "internal_guards": 6,
+    "reviewer_guard_total": 32,
+    "combined_author_reviewer_guards": 63,
+    "full_seeded_passes": 1,
+    "sequences": 60000,
+    "draws": 480000,
+    "cpu_seconds_limit": 120,
+    "memory_bytes_limit": 1073741824,
+    "hard_deadline": "2026-10-11T04:43:46.153905+00:00"
+  },
+  "scope": "Audit the frozen finite integrity repair only. No publication, code edits, author output overwrite, source discovery, empirical neuroscience or parent completion.",
+  "method": "New ordered-response enumeration of 256 sequences per 8-response fixture using rational products and 70-digit Decimal conditional entropy. Derive MC metrics afresh from histograms. Compare one REAL unmodified candidate expected_payload seeded generation against pinned original and author replay. No cache replacement or math imported for expectations.",
+  "independence_limit": "Reviewer read protocol, code and historical outputs before authoring the oracle; this is independently implemented but not blinded. The single fresh seeded pass is the candidate implementation, distinct from historical cross-implementation evidence.",
+  "tests": [
+    "Frozen code and original source pins; hash all existing candidate non-Git files before and after.",
+    "Independent exact rational recovery, posterior mean, confidence, masses; all grid EIG1 and selected x; 70-digit EIG8; count-derived MC and pooled metrics.",
+    "Accept pinned baseline and recorded fresh baseline.",
+    "Recreate and reject all21 frozen report mutations without importing author mutation harness.",
+    "Reject8 new heldout reports: compensating pooled values; noncanonical equivalent rational string; integer-valued-float histogram count; equal-prior summary tamper; coherent histogram plus per-seed and pooled metric rewrite; invented C recovery; unrecognized root claim; exponent overflow in a mathematical field.",
+    "Accept one metadata-spoof boundary fixture ONLY with NOT_VALIDATED/NONE/FAILED-INCOMPLETE output labels; do not endorse metadata.",
+    "Parser rejects6 additional placement/duplicate fixtures covering NaN, +/-Infinity, nested and escaped duplicates. Record that exponent overflow parses as infinity but must reject at math report boundary.",
+    "Guard rejects tiny rational out-of-bounds, NaN,+/-Inf,False in each of3 positions; unknown truth and unsupported endpoint candidate pair. Accept and independently verify6 off-grid/boundary rational fixtures."
+  ],
+  "failure_rule": "Stop on candidate mismatch, integrity change, call cap, wall or CPU deadline. Preserve outputs; no revision or rerun within this review.",
+  "setup_actions": [
+    "Read-only target inspection and source reads.",
+    "Created reviewer harness outside candidate tree; syntax py_compile succeeded. No target import or test before this freeze."
+  ]
+}

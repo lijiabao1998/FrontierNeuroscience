@@ -1,0 +1,25 @@
+{
+  "verdict": "PASS_FINITE_INDEPENDENT_REVIEW",
+  "calls": {
+    "report": 32,
+    "parser": 7,
+    "expectation_seeded_pass": 1,
+    "guard_direct": 26,
+    "guard_internal": 6
+  },
+  "key_numbers": {
+    "selected_x": "-1",
+    "ordinary_recovery": "1/2",
+    "diagnostic_recovery": "3807/4096",
+    "diagnostic_EIG8_decimal": "0.7710929067550159034164699341471819754793957004471945279606700097698266",
+    "outside_C_high_confidence": "37/128"
+  },
+  "source_integrity": {
+    "files_pinned": 78,
+    "changed_existing_files": [],
+    "added_files": [],
+    "all_existing_files_unchanged": true
+  },
+  "elapsed_seconds": 0.9892815339990193,
+  "cpu_seconds": 1.022646091
+}

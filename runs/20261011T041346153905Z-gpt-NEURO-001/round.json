@@ -1,0 +1,123 @@
+{
+  "round_id": "20261011T041346153905Z-gpt-NEURO-001",
+  "problem_id": "NEURO-001",
+  "agent": "gpt",
+  "branch": "gpt/NEURO-001-validator-repair-resumed-20261011t041346153905z",
+  "base_sha": "65dbef8313d4c9170f0cdcf119901eeb76bb0434",
+  "started_at": "2026-10-11T04:13:46.153905+00:00",
+  "state": "FINISHED",
+  "acceptance": "Frozen protocol v2 at problems/NEURO-001/experiments/validator_repair_v2/protocol.json. Finite validator repair only: preserve original FAILED/INCOMPLETE, reproduce mathematical payload, reject all listed mutations, separate current independent review. No new neural evidence.",
+  "not_done": "No empirical neuroscience, mechanistic exclusion, subject/session/stimulus-domain holdout, clinical validation, blindness, universal validator security, novelty or parent completion. No branch publication/PR/main merge/deployment performed. Metadata claim integrity and parser-wide finite-float guarantees remain outside accepted scope.",
+  "budget": {
+    "cpu_seconds": 1800,
+    "memory_bytes": 4294967296,
+    "usd": 0,
+    "max_new_scientific_configurations": 0,
+    "max_replayed_scientific_configurations": 60,
+    "max_validator_calls": 100,
+    "max_guarded_input_calls": 64,
+    "wall_minutes": 30,
+    "round_started_at": "2026-10-11T04:13:46.153905+00:00",
+    "hard_deadline": "2026-10-11T04:43:46.153905+00:00",
+    "wall_rule": "All preparation, waiting, execution and review after start count. No extension without a newly documented round.",
+    "max_full_seeded_replay_passes": 4,
+    "replay_pass_allocation": [
+      "one original baseline process",
+      "one cached new-validator expectation process",
+      "one historical cross-implementation oracle process",
+      "at most one independent reviewer seeded replay"
+    ],
+    "max_histogram_sequences_all_passes": 240000,
+    "max_bernoulli_draws_all_passes": 1920000,
+    "max_trials": 100
+  },
+  "preflight": {
+    "checked_at": "2026-10-11T04:14:57.929438+00:00",
+    "verdict": "PARTIAL_PROGRESS",
+    "sources_read": true,
+    "scope_compared": true,
+    "retractions_checked": true,
+    "licenses_checked": true,
+    "safety_checked": true,
+    "baseline_identified": true,
+    "acceptance_frozen": true,
+    "queries": [
+      {
+        "category": "general",
+        "query": "\"controversial stimuli\" model discrimination 2026 validation",
+        "engine": "web search",
+        "outcome": "Located original primary experiment and 2026 review; no broader empirical completion inferred."
+      },
+      {
+        "category": "discipline",
+        "query": "site:arxiv.org \"1911.09288\" \"controversial\"",
+        "engine": "web search arXiv filter",
+        "outcome": "Original paper version v2 located; opened version-specific HTML."
+      },
+      {
+        "category": "solution",
+        "query": "\"controversial stimuli\" model discrimination solved exact 2026",
+        "engine": "web search",
+        "outcome": "Method and related models found; no source establishes parent cross-subject scope."
+      },
+      {
+        "category": "criticism",
+        "query": "\"Controversial stimuli\" Golan correction erratum retraction",
+        "engine": "web search",
+        "outcome": "No specific retraction/correction surfaced in bounded search. This is not absence proof."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Controversial stimuli: pitting neural networks against each other as models of human recognition",
+        "url": "https://arxiv.org/html/1911.09288v2",
+        "kind": "primary",
+        "supports": "Models disagreeing can expose model limits; original high-dimensional visual/human study differs from scalar synthetic validator task.",
+        "version": "arXiv 1911.09288v2, metadata revised 2020-07-15",
+        "reading": "Methods/results excerpt lines65-137 read; not a full source study reproduction."
+      },
+      {
+        "title": "Python JSON encoder and decoder documentation",
+        "url": "https://docs.python.org/3/library/json.html",
+        "kind": "primary",
+        "supports": "Default parsing permits nonfinite literals and duplicate names; strict parsing requires explicit rejection hooks.",
+        "version": "Documentation currently3.15, page last-updated2026-10-10",
+        "reading": "JSON compliance and parser controls sections read; use standard-library features supported by actual environment."
+      }
+    ],
+    "limitations": "Bounded fresh search on2026-10-11; no broad resolution claim. Original paper methods excerpt and official Python JSON parsing documentation read; no third-party assets/data reused. Prior2026-10-10 preparation expired without execution. No paid services, personal data, subjects or neural measurements.",
+    "scope_comparison": "Parent NEURO-001 empirical cross-subject/model-family claim remains OPEN. This round repairs known validation failure in a synthetic finite example; substantive outputs only validator integrity and numerical replay. Source paper does not validate this code.",
+    "baseline": "Exact source commit65dbef8313d4c9170f0cdcf119901eeb76bb0434. Original protocol, source and result SHA256 pinned and matching; previous independent reviewer reproduced arithmetic while documenting six semantic acceptance failures and invalid truth probability."
+  },
+  "artifacts": [
+    "problems/NEURO-001/experiments/validator_repair_v2/protocol.json",
+    "problems/NEURO-001/experiments/validator_repair_v2/strict_validator.py",
+    "problems/NEURO-001/experiments/validator_repair_v2/run_validation.py",
+    "problems/NEURO-001/experiments/validator_repair_v2/mutations.json",
+    "problems/NEURO-001/results/validator_repair_v2/results.json",
+    "problems/NEURO-001/results/validator_repair_v2/historical-comparison.json",
+    "problems/NEURO-001/results/validator_repair_v2/source-integrity.json",
+    "problems/NEURO-001/results/validator_repair_v2/REPORT.md",
+    "problems/NEURO-001/results/validator_repair_v2/independent/REPORT.md",
+    "problems/NEURO-001/results/validator_repair_v2/independent/results.json",
+    "problems/NEURO-001/results/validator_repair_v2/independent/evidence-sha256.json"
+  ],
+  "result": {
+    "author_state": "PASS_FINITE_AUTHOR_TESTS",
+    "checks_passed": 53,
+    "checks_total": 53,
+    "original_acceptance": "FAILED/INCOMPLETE",
+    "historical_cross_implementation_replay": "PASS_FOR_FROZEN_SYNTHETIC_INSTANCE",
+    "current_independent_review": "PASS_FINITE_INDEPENDENT_REVIEW",
+    "scientific_parent_status": "OPEN",
+    "new_discovery": false,
+    "independent_checks_passed": 82,
+    "heldout_report_mutations_rejected": 8,
+    "full_seeded_passes_used": 4,
+    "guarded_exact_calls_total": 63
+  },
+  "public_claim_url": "https://github.com/lijiabao1998/FrontierNeuroscience/pull/4#issuecomment-6105335060",
+  "public_claim_status": "ACCEPTED_VERIFIED",
+  "admitted_at": "2026-10-11T04:14:58.014295+00:00",
+  "finished_at": "2026-10-11T04:26:23.562492+00:00"
+}
