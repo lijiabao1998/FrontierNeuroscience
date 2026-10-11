@@ -1,0 +1,19 @@
+{
+  "command": [
+    "python",
+    "/workspace/shared/frontier-human-20261011/neuro_candidate/problems/NEURO-001/results/synthetic_disagreement/independent/oracle.py",
+    "--repo",
+    "/workspace/shared/frontier-human-20261011/neuro_candidate",
+    "--simulate",
+    "--design-order",
+    "ordinary/diagnostic",
+    "--output",
+    "/workspace/shared/frontier-human-20261011/neuro_candidate/problems/NEURO-001/results/validator_repair_v2/historical-oracle-replay.json"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 0.34652932100289036,
+  "completed_at": "2026-10-11T04:16:00.281704+00:00",
+  "kind": "HISTORICAL_CROSS_IMPLEMENTATION_REPLAY; reused older independent source, not new independent authorship",
+  "total_full_seeded_passes_used": 3,
+  "remaining_full_seeded_passes": 1
+}

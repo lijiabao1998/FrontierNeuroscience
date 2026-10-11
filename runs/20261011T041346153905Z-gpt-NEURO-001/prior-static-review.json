@@ -1,0 +1,33 @@
+{
+  "reviewed_at": "2026-10-10T13:00:50.482464+00:00",
+  "problem_id": "NEURO-001",
+  "verdict": "PASS_FINAL_PROTOCOL_AND_STATIC_IMPLEMENTATION",
+  "sha256": {
+    "protocol.json": "4ea10fd3c47e6c33e095035f4b3d6ba9dc1793a37a69cbbf073af4f003a2476d",
+    "strict_validator.py": "a7e69413be49fcf29d214422bd47cf115a498e4efdee2781b16dc66ac09c9ea3",
+    "run_validation.py": "46c79c9d356a0d40adaa88ba6e181d8379f59c1419fccfe383e0952fbb24a90a",
+    "mutations.json": "46f710a00ac514495797076212f503c2b170e3c0c7ab0826a5ad4435aff2d7bd"
+  },
+  "resolved_since_v2": [
+    "Protocol caps four seeded passes across all named replay implementations, including independent reviewer, with explicit 240000 sequences/1920000 draws total.",
+    "Mutation fixture construction separated from rejection harness to prevent fixture errors counting as successful rejection.",
+    "Mutation nonidentity and baseline replay use type-sensitive structural equality; False versus 0.0 remains distinct.",
+    "Initialization/freeze/input-integrity failures persisted; final original-source hashes observed on success and failure.",
+    "Bytecode writes disabled before original baseline imports."
+  ],
+  "controls_static_review": [
+    "21 frozen report mutations cover old failures and additional schema/semantic cases.",
+    "Argument guards and parser rejection tests precede full replay.",
+    "No overwrite/resume hides old attempt; original baseline replay writes a separate disposable evidence copy.",
+    "Expected code/input pins, admitted state/public claim presence checked before computation.",
+    "CPU/memory resource limits and absolute SIGALRM wall deadline present.",
+    "Original failed acceptance and independent-validation-pending status explicit."
+  ],
+  "review_limitations": [
+    "Static read only; no imports, numerical experiment, mutation tests or original baseline executed by reviewer.",
+    "Runtime authority verification/admission remains parent/author responsibility.",
+    "No claim of universal validator security or new scientific result.",
+    "Independent numerical and held-out mutant review still required following any authorized run."
+  ],
+  "original_evidence_preserved": "Original protocol/code/results pins independently checked against stated hashes during protocol review."
+}

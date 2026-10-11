@@ -1,0 +1,194 @@
+{
+  "numeric_verdict": "PASS_FOR_FROZEN_SYNTHETIC_INSTANCE",
+  "control_adequacy": "LIMITED: author validator rejects malformed histogram but accepts semantic tampering and NaN; independent verifier rejects all seven injected corruptions.",
+  "parent_problem_status": "OPEN",
+  "artifact_hashes": {
+    "baseline.py": "01e492d41322b4983526635012613dc039d402f005b704eefaf5a03ecc1e02aa",
+    "results.json": "4cf9f92ad5d522fc9319d37aad7c345f793416ce7089c9f03073777547cb042e"
+  },
+  "agreement": {
+    "max_entropy_absolute_difference": 1.1102230246251565e-16,
+    "histograms_exactly_equal": 60,
+    "pooled": [
+      {
+        "design": "ordinary",
+        "truth": "A",
+        "metric": "recovery",
+        "estimate": 0.5,
+        "exact": 0.5,
+        "absolute_error": 0.0
+      },
+      {
+        "design": "ordinary",
+        "truth": "A",
+        "metric": "high_confidence",
+        "estimate": 0.0,
+        "exact": 0.0,
+        "absolute_error": 0.0
+      },
+      {
+        "design": "ordinary",
+        "truth": "B",
+        "metric": "recovery",
+        "estimate": 0.5,
+        "exact": 0.5,
+        "absolute_error": 0.0
+      },
+      {
+        "design": "ordinary",
+        "truth": "B",
+        "metric": "high_confidence",
+        "estimate": 0.0,
+        "exact": 0.0,
+        "absolute_error": 0.0
+      },
+      {
+        "design": "ordinary",
+        "truth": "C",
+        "metric": "high_confidence",
+        "estimate": 0.0,
+        "exact": 0.0,
+        "absolute_error": 0.0
+      },
+      {
+        "design": "diagnostic",
+        "truth": "A",
+        "metric": "recovery",
+        "estimate": 0.9297000000000001,
+        "exact": 0.929443359375,
+        "absolute_error": 0.0002566406250000819
+      },
+      {
+        "design": "diagnostic",
+        "truth": "A",
+        "metric": "high_confidence",
+        "estimate": 0.6834,
+        "exact": 0.682769775390625,
+        "absolute_error": 0.0006302246093750075
+      },
+      {
+        "design": "diagnostic",
+        "truth": "B",
+        "metric": "recovery",
+        "estimate": 0.93015,
+        "exact": 0.929443359375,
+        "absolute_error": 0.0007066406250000323
+      },
+      {
+        "design": "diagnostic",
+        "truth": "B",
+        "metric": "high_confidence",
+        "estimate": 0.6828000000000001,
+        "exact": 0.682769775390625,
+        "absolute_error": 3.022460937507354e-05
+      },
+      {
+        "design": "diagnostic",
+        "truth": "C",
+        "metric": "high_confidence",
+        "estimate": 0.2899,
+        "exact": 0.2890625,
+        "absolute_error": 0.000837499999999991
+      }
+    ],
+    "max_pooled_absolute_error": 0.000837499999999991
+  },
+  "tampered_controls": [
+    {
+      "case": "histogram_total_plus_one",
+      "author_validator": "REJECTED",
+      "independent_verifier": "REJECTED",
+      "author_error": "ValueError: invalid histogram",
+      "independent_error": "ValueError: MC[0].histogram: [1, 6, 34, 111, 220, 264, 232, 110, 23] != [0, 6, 34, 111, 220, 264, 232, 110, 23]"
+    },
+    {
+      "case": "histogram_redistribution_total_preserved",
+      "author_validator": "ACCEPTED",
+      "independent_verifier": "REJECTED",
+      "author_error": null,
+      "independent_error": "ValueError: MC[0].histogram: [1, 5, 34, 111, 220, 264, 232, 110, 23] != [0, 6, 34, 111, 220, 264, 232, 110, 23]"
+    },
+    {
+      "case": "diagnostic_EIG_plus_0_125",
+      "author_validator": "ACCEPTED",
+      "independent_verifier": "REJECTED",
+      "author_error": null,
+      "independent_error": "ValueError: diagnostic.EIG8: 0.8960929067550158 != 0.7710929067550158"
+    },
+    {
+      "case": "diagnostic_C_confidence_set_zero",
+      "author_validator": "ACCEPTED",
+      "independent_verifier": "REJECTED",
+      "author_error": null,
+      "independent_error": "ValueError: diagnostic/C/confidence: 0 != 0.2890625"
+    },
+    {
+      "case": "ordinary_EIG_NaN",
+      "author_validator": "ACCEPTED",
+      "independent_verifier": "REJECTED",
+      "author_error": null,
+      "independent_error": "ValueError: ordinary.EIG8: nan != 0.0"
+    },
+    {
+      "case": "selected_input_changed",
+      "author_validator": "ACCEPTED",
+      "independent_verifier": "REJECTED",
+      "author_error": null,
+      "independent_error": "ValueError: selected input: Fraction(1, 1) != Fraction(-1, 1)"
+    },
+    {
+      "case": "duplicated_seed",
+      "author_validator": "ACCEPTED",
+      "independent_verifier": "REJECTED",
+      "author_error": null,
+      "independent_error": "ValueError: MC[1].seed: 10000 != 10001"
+    }
+  ],
+  "author_input_controls": [
+    {
+      "case": "invalid_x",
+      "author_result": "REJECTED",
+      "error": "ValueError: outside frozen domain"
+    },
+    {
+      "case": "invalid_model",
+      "author_result": "REJECTED",
+      "error": "ValueError: unknown model"
+    },
+    {
+      "case": "entropy_invalid_probability",
+      "author_result": "REJECTED",
+      "error": "ValueError: invalid probability"
+    },
+    {
+      "case": "exact_invalid_truth_probability",
+      "author_result": "ACCEPTED",
+      "returned": {
+        "recovery_fraction": "209",
+        "recovery": 209.0,
+        "mean_posterior_A": 93.74584306386751,
+        "high_confidence": 1121.0,
+        "high_confidence_fraction": "1121",
+        "binomial_mass": [
+          "1",
+          "-16",
+          "112",
+          "-448",
+          "1120",
+          "-1792",
+          "1792",
+          "-1024",
+          "256"
+        ]
+      }
+    }
+  ],
+  "scope": "256 ordered sequences per design, exact rational masses/posteriors; logarithms floating point <=1e-12. No biological evidence or novelty.",
+  "independence": "Oracle implemented and exact outputs saved before author source/results read; author source subsequently read to identify index order and audit controls. Author functions never used for oracle computation.",
+  "protocol_ambiguities": [
+    "Design index label order unspecified; author source resolves ordinary then diagnostic.",
+    "Truth index label order implicit; author source resolves A/B/C.",
+    "Posterior mean referent unspecified; author implementation resolves mean P(A|Y)."
+  ],
+  "raw_stdout_and_exitcode_match": true
+}

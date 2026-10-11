@@ -1,0 +1,447 @@
+{
+  "candidate": "validator-repair-v2",
+  "state": "PASS_FINITE_AUTHOR_TESTS",
+  "checks": [
+    {
+      "name": "probability_arg0_negative",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "error": "ValueError: Probability outside [0,1]",
+      "pass": true
+    },
+    {
+      "name": "probability_arg0_above_one",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "error": "ValueError: Probability outside [0,1]",
+      "pass": true
+    },
+    {
+      "name": "probability_arg0_nan",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "error": "ValueError: Nonfinite probability",
+      "pass": true
+    },
+    {
+      "name": "probability_arg0_positive_inf",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "error": "ValueError: Nonfinite probability",
+      "pass": true
+    },
+    {
+      "name": "probability_arg0_negative_inf",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "error": "ValueError: Nonfinite probability",
+      "pass": true
+    },
+    {
+      "name": "probability_arg0_boolean",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "error": "ValueError: Probability requires rational/integer/finite float",
+      "pass": true
+    },
+    {
+      "name": "probability_arg1_negative",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "error": "ValueError: Probability outside [0,1]",
+      "pass": true
+    },
+    {
+      "name": "probability_arg1_above_one",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "error": "ValueError: Probability outside [0,1]",
+      "pass": true
+    },
+    {
+      "name": "probability_arg1_nan",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "error": "ValueError: Nonfinite probability",
+      "pass": true
+    },
+    {
+      "name": "probability_arg1_positive_inf",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "error": "ValueError: Nonfinite probability",
+      "pass": true
+    },
+    {
+      "name": "probability_arg1_negative_inf",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "error": "ValueError: Nonfinite probability",
+      "pass": true
+    },
+    {
+      "name": "probability_arg1_boolean",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "error": "ValueError: Probability requires rational/integer/finite float",
+      "pass": true
+    },
+    {
+      "name": "probability_arg2_negative",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "error": "ValueError: Probability outside [0,1]",
+      "pass": true
+    },
+    {
+      "name": "probability_arg2_above_one",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "error": "ValueError: Probability outside [0,1]",
+      "pass": true
+    },
+    {
+      "name": "probability_arg2_nan",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "error": "ValueError: Nonfinite probability",
+      "pass": true
+    },
+    {
+      "name": "probability_arg2_positive_inf",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "error": "ValueError: Nonfinite probability",
+      "pass": true
+    },
+    {
+      "name": "probability_arg2_negative_inf",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "error": "ValueError: Nonfinite probability",
+      "pass": true
+    },
+    {
+      "name": "probability_arg2_boolean",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "error": "ValueError: Probability requires rational/integer/finite float",
+      "pass": true
+    },
+    {
+      "name": "unknown_truth",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "error": "ValueError: Unknown truth label",
+      "pass": true
+    },
+    {
+      "name": "undefined_posterior_endpoints",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "error": "ValueError: Undefined candidate posterior at a response count",
+      "pass": true
+    },
+    {
+      "name": "valid_probability_fixture_0",
+      "expected": "ACCEPT",
+      "actual": "ACCEPT",
+      "pass": true
+    },
+    {
+      "name": "valid_probability_fixture_1",
+      "expected": "ACCEPT",
+      "actual": "ACCEPT",
+      "pass": true
+    },
+    {
+      "name": "valid_probability_fixture_2",
+      "expected": "ACCEPT",
+      "actual": "ACCEPT",
+      "pass": true
+    },
+    {
+      "name": "valid_probability_fixture_3",
+      "expected": "ACCEPT",
+      "actual": "ACCEPT",
+      "pass": true
+    },
+    {
+      "name": "valid_probability_fixture_4",
+      "expected": "ACCEPT",
+      "actual": "ACCEPT",
+      "pass": true
+    },
+    {
+      "name": "strict_json_nan",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "error": "ValueError: Nonfinite JSON literal: NaN",
+      "pass": true
+    },
+    {
+      "name": "strict_json_inf",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "error": "ValueError: Nonfinite JSON literal: Infinity",
+      "pass": true
+    },
+    {
+      "name": "strict_json_negative_inf",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "error": "ValueError: Nonfinite JSON literal: -Infinity",
+      "pass": true
+    },
+    {
+      "name": "strict_json_duplicate",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "error": "ValueError: Duplicate JSON key: x",
+      "pass": true
+    },
+    {
+      "name": "pinned_original_payload",
+      "expected": "ACCEPT",
+      "actual": "ACCEPT",
+      "pass": true
+    },
+    {
+      "name": "report_histogram_total",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "error": "ValueError: $.mc[0].histogram[0]: exact value/type mismatch",
+      "pass": true
+    },
+    {
+      "name": "report_histogram_total_preserved",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "error": "ValueError: $.mc[0].histogram[1]: exact value/type mismatch",
+      "pass": true
+    },
+    {
+      "name": "report_diagnostic_eig",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "error": "ValueError: $.designs[1].eig8: numerical mismatch",
+      "pass": true
+    },
+    {
+      "name": "report_outside_C_confidence",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "error": "ValueError: $.designs[1].truths.C.high_confidence: numerical mismatch",
+      "pass": true
+    },
+    {
+      "name": "report_ordinary_nan",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "error": "ValueError: $.designs[0].eig8: expected finite numeric value",
+      "pass": true
+    },
+    {
+      "name": "report_selected_input",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "error": "ValueError: $.selected_x: exact value/type mismatch",
+      "pass": true
+    },
+    {
+      "name": "report_duplicate_seed",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "error": "ValueError: $.mc[1].seed: exact value/type mismatch",
+      "pass": true
+    },
+    {
+      "name": "report_negative_histogram",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "error": "ValueError: $.mc[0].histogram[0]: exact value/type mismatch",
+      "pass": true
+    },
+    {
+      "name": "report_noninteger_histogram",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "error": "ValueError: $.mc[0].histogram[0]: exact value/type mismatch",
+      "pass": true
+    },
+    {
+      "name": "report_missing_configuration",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "error": "ValueError: $.mc: wrong array shape",
+      "pass": true
+    },
+    {
+      "name": "report_duplicate_configuration",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "error": "ValueError: $.mc[1].seed: exact value/type mismatch",
+      "pass": true
+    },
+    {
+      "name": "report_reordered_designs",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "error": "ValueError: $.designs[0].name: exact value/type mismatch",
+      "pass": true
+    },
+    {
+      "name": "report_changed_truth_label",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "error": "ValueError: $.mc[0].truth: exact value/type mismatch",
+      "pass": true
+    },
+    {
+      "name": "report_rational_mass",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "error": "ValueError: $.designs[1].truths.C.binomial_mass[0]: exact value/type mismatch",
+      "pass": true
+    },
+    {
+      "name": "report_posterior_mean",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "error": "ValueError: $.designs[1].truths.C.mean_posterior_A: numerical mismatch",
+      "pass": true
+    },
+    {
+      "name": "report_pooled_estimate",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "error": "ValueError: $.pooled_mc[0].estimate: numerical mismatch",
+      "pass": true
+    },
+    {
+      "name": "report_protocol_hash",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "error": "ValueError: $.protocol_sha256: exact value/type mismatch",
+      "pass": true
+    },
+    {
+      "name": "report_numeric_boolean",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "error": "ValueError: $.designs[0].eig8: expected finite numeric value",
+      "pass": true
+    },
+    {
+      "name": "report_infinity",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "error": "ValueError: $.designs[1].eig8: expected finite numeric value",
+      "pass": true
+    },
+    {
+      "name": "report_missing_field",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "error": "ValueError: $.designs[1].truths.C: wrong object fields",
+      "pass": true
+    },
+    {
+      "name": "report_unexpected_nested_field",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "error": "ValueError: $.designs[0]: wrong object fields",
+      "pass": true
+    },
+    {
+      "name": "all_nondynamic_original_fields_exact",
+      "expected": "ACCEPT",
+      "actual": "ACCEPT",
+      "pass": true
+    },
+    {
+      "name": "fresh_replay_payload",
+      "expected": "ACCEPT",
+      "actual": "ACCEPT",
+      "pass": true
+    }
+  ],
+  "legacy_controls": [
+    {
+      "name": "histogram_total",
+      "rejected": true
+    },
+    {
+      "name": "histogram_total_preserved",
+      "rejected": false
+    },
+    {
+      "name": "diagnostic_eig",
+      "rejected": false
+    },
+    {
+      "name": "outside_C_confidence",
+      "rejected": false
+    },
+    {
+      "name": "ordinary_nan",
+      "rejected": false
+    },
+    {
+      "name": "selected_input",
+      "rejected": false
+    },
+    {
+      "name": "duplicate_seed",
+      "rejected": false
+    },
+    {
+      "name": "invalid_truth_probability",
+      "rejected": false
+    }
+  ],
+  "parent_problem": "OPEN",
+  "new_discovery": false,
+  "original_acceptance": "FAILED/INCOMPLETE",
+  "started_at": "2026-10-11T04:15:20.790416+00:00",
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.41"
+  },
+  "pins_before": {
+    "original_protocol_sha256": "6cd7879947d13de6c7b92b0e91974769157dfbddcef844ed21d8e03a0cac9bfa",
+    "original_code_sha256": "01e492d41322b4983526635012613dc039d402f005b704eefaf5a03ecc1e02aa",
+    "original_results_sha256": "4cf9f92ad5d522fc9319d37aad7c345f793416ce7089c9f03073777547cb042e"
+  },
+  "code_freeze": {
+    "frozen_at": "2026-10-11T04:15:20.231923+00:00",
+    "phase": "PRE_EXECUTION",
+    "experiment_executed": false,
+    "sha256": {
+      "problems/NEURO-001/experiments/validator_repair_v2/protocol.json": "97ccf1310b31de7cac5b253a58e0a267c7ec97d077fdb430d1f9488082311435",
+      "problems/NEURO-001/experiments/validator_repair_v2/strict_validator.py": "a7e69413be49fcf29d214422bd47cf115a498e4efdee2781b16dc66ac09c9ea3",
+      "problems/NEURO-001/experiments/validator_repair_v2/run_validation.py": "611dd250b2c319906e0b8397a1e3bc0b8078e42f8b282a9ba42155f6d321dfc1",
+      "problems/NEURO-001/experiments/validator_repair_v2/mutations.json": "46f710a00ac514495797076212f503c2b170e3c0c7ab0826a5ad4435aff2d7bd"
+    }
+  },
+  "baseline_exit_code": 0,
+  "pins_after": {
+    "original_protocol_sha256": "6cd7879947d13de6c7b92b0e91974769157dfbddcef844ed21d8e03a0cac9bfa",
+    "original_code_sha256": "01e492d41322b4983526635012613dc039d402f005b704eefaf5a03ecc1e02aa",
+    "original_results_sha256": "4cf9f92ad5d522fc9319d37aad7c345f793416ce7089c9f03073777547cb042e"
+  },
+  "independent_validation": "PENDING_CURRENT_REVIEW",
+  "elapsed_seconds": 0.36415077799756546,
+  "cpu_seconds": 0.213266235,
+  "maxrss_kib": 13952,
+  "completed_at": "2026-10-11T04:15:21.154474+00:00",
+  "pins_after_observed": {
+    "original_protocol_sha256": "6cd7879947d13de6c7b92b0e91974769157dfbddcef844ed21d8e03a0cac9bfa",
+    "original_code_sha256": "01e492d41322b4983526635012613dc039d402f005b704eefaf5a03ecc1e02aa",
+    "original_results_sha256": "4cf9f92ad5d522fc9319d37aad7c345f793416ce7089c9f03073777547cb042e"
+  },
+  "original_sources_unchanged": true,
+  "cpu_seconds_parent": 0.213452,
+  "cpu_seconds_children": 0.201753,
+  "maxrss_children_kib": 13824
+}

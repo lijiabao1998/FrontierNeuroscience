@@ -1,0 +1,11 @@
+{
+  "frozen_at": "2026-10-11T04:15:20.231923+00:00",
+  "phase": "PRE_EXECUTION",
+  "experiment_executed": false,
+  "sha256": {
+    "problems/NEURO-001/experiments/validator_repair_v2/protocol.json": "97ccf1310b31de7cac5b253a58e0a267c7ec97d077fdb430d1f9488082311435",
+    "problems/NEURO-001/experiments/validator_repair_v2/strict_validator.py": "a7e69413be49fcf29d214422bd47cf115a498e4efdee2781b16dc66ac09c9ea3",
+    "problems/NEURO-001/experiments/validator_repair_v2/run_validation.py": "611dd250b2c319906e0b8397a1e3bc0b8078e42f8b282a9ba42155f6d321dfc1",
+    "problems/NEURO-001/experiments/validator_repair_v2/mutations.json": "46f710a00ac514495797076212f503c2b170e3c0c7ab0826a5ad4435aff2d7bd"
+  }
+}

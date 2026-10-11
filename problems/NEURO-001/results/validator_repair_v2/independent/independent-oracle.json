@@ -1,0 +1,451 @@
+{
+  "method": "Ordered 256-response enumeration; rational likelihoods; 70-digit Decimal entropy; no author mathematics imported. Reviewer read code/results before independently authoring this oracle, so this is not blinded.",
+  "grid": [
+    {
+      "x": "-1",
+      "eig1": 0.18872187554086714,
+      "eig1_decimal": "0.1887218755408671360903042079608623815698608057693607953418144909058235"
+    },
+    {
+      "x": "-3/4",
+      "eig1": 0.1039617674654426,
+      "eig1_decimal": "0.1039617674654425973465369163394170890662314842263969902946625051293315"
+    },
+    {
+      "x": "-1/2",
+      "eig1": 0.04556599707503504,
+      "eig1_decimal": "0.045565997075035035464101747411300050700450023525043280205129992837871"
+    },
+    {
+      "x": "-1/4",
+      "eig1": 0.011300591711502501,
+      "eig1_decimal": "0.011300591711502501141317888230219551135240357514227785871536865639501"
+    },
+    {
+      "x": "0",
+      "eig1": 0.0,
+      "eig1_decimal": "0"
+    },
+    {
+      "x": "1/4",
+      "eig1": 1e-70,
+      "eig1_decimal": "1E-70"
+    },
+    {
+      "x": "1/2",
+      "eig1": 0.0,
+      "eig1_decimal": "0E-70"
+    },
+    {
+      "x": "3/4",
+      "eig1": -2e-70,
+      "eig1_decimal": "-2E-70"
+    },
+    {
+      "x": "1",
+      "eig1": 0.0,
+      "eig1_decimal": "0E-70"
+    }
+  ],
+  "designs": [
+    {
+      "name": "ordinary",
+      "x": "1/2",
+      "pA": "5/8",
+      "pB": "5/8",
+      "truths": {
+        "A": {
+          "recovery_fraction": "1/2",
+          "recovery": 0.5,
+          "mean_posterior_A": 0.5,
+          "high_confidence": 0.0,
+          "high_confidence_fraction": "0",
+          "binomial_mass": [
+            "6561/16777216",
+            "10935/2097152",
+            "127575/4194304",
+            "212625/2097152",
+            "1771875/8388608",
+            "590625/2097152",
+            "984375/4194304",
+            "234375/2097152",
+            "390625/16777216"
+          ]
+        },
+        "B": {
+          "recovery_fraction": "1/2",
+          "recovery": 0.5,
+          "mean_posterior_A": 0.5,
+          "high_confidence": 0.0,
+          "high_confidence_fraction": "0",
+          "binomial_mass": [
+            "6561/16777216",
+            "10935/2097152",
+            "127575/4194304",
+            "212625/2097152",
+            "1771875/8388608",
+            "590625/2097152",
+            "984375/4194304",
+            "234375/2097152",
+            "390625/16777216"
+          ]
+        },
+        "C": {
+          "recovery_fraction": null,
+          "recovery": null,
+          "mean_posterior_A": 0.5,
+          "high_confidence": 0.0,
+          "high_confidence_fraction": "0",
+          "binomial_mass": [
+            "1/256",
+            "1/32",
+            "7/64",
+            "7/32",
+            "35/128",
+            "7/32",
+            "7/64",
+            "1/32",
+            "1/256"
+          ]
+        }
+      },
+      "exact_details": {
+        "A": {
+          "mean_posterior_A_fraction": "1/2",
+          "information_bits_decimal": "0E-24",
+          "posterior_by_count": [
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2"
+          ],
+          "map_score_A_by_count": [
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2"
+          ]
+        },
+        "B": {
+          "mean_posterior_A_fraction": "1/2",
+          "information_bits_decimal": "0E-24",
+          "posterior_by_count": [
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2"
+          ],
+          "map_score_A_by_count": [
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2"
+          ]
+        },
+        "C": {
+          "mean_posterior_A_fraction": "1/2",
+          "information_bits_decimal": "0E-24",
+          "posterior_by_count": [
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2"
+          ],
+          "map_score_A_by_count": [
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2"
+          ]
+        }
+      },
+      "eig8": 0.0,
+      "equal_prior_recovery": 0.5
+    },
+    {
+      "name": "diagnostic",
+      "x": "-1",
+      "pA": "1/4",
+      "pB": "3/4",
+      "truths": {
+        "A": {
+          "recovery_fraction": "3807/4096",
+          "recovery": 0.929443359375,
+          "mean_posterior_A": 0.9068544372508728,
+          "high_confidence": 0.682769775390625,
+          "high_confidence_fraction": "22373/32768",
+          "binomial_mass": [
+            "6561/65536",
+            "2187/8192",
+            "5103/16384",
+            "1701/8192",
+            "2835/32768",
+            "189/8192",
+            "63/16384",
+            "3/8192",
+            "1/65536"
+          ]
+        },
+        "B": {
+          "recovery_fraction": "3807/4096",
+          "recovery": 0.929443359375,
+          "mean_posterior_A": 0.09314556274912722,
+          "high_confidence": 0.682769775390625,
+          "high_confidence_fraction": "22373/32768",
+          "binomial_mass": [
+            "1/65536",
+            "3/8192",
+            "63/16384",
+            "189/8192",
+            "2835/32768",
+            "1701/8192",
+            "5103/16384",
+            "2187/8192",
+            "6561/65536"
+          ]
+        },
+        "C": {
+          "recovery_fraction": null,
+          "recovery": null,
+          "mean_posterior_A": 0.5,
+          "high_confidence": 0.2890625,
+          "high_confidence_fraction": "37/128",
+          "binomial_mass": [
+            "1/256",
+            "1/32",
+            "7/64",
+            "7/32",
+            "35/128",
+            "7/32",
+            "7/64",
+            "1/32",
+            "1/256"
+          ]
+        }
+      },
+      "exact_details": {
+        "A": {
+          "mean_posterior_A_fraction": "17810681/19640066",
+          "information_bits_decimal": "0.7710929067550159034164699341471819754793957004471945279606700097698266",
+          "posterior_by_count": [
+            "6561/6562",
+            "729/730",
+            "81/82",
+            "9/10",
+            "1/2",
+            "1/10",
+            "1/82",
+            "1/730",
+            "1/6562"
+          ],
+          "map_score_A_by_count": [
+            "1",
+            "1",
+            "1",
+            "1",
+            "1/2",
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "B": {
+          "mean_posterior_A_fraction": "1829385/19640066",
+          "information_bits_decimal": "0.7710929067550159034164699341471819754793957004471945279606700097698266",
+          "posterior_by_count": [
+            "6561/6562",
+            "729/730",
+            "81/82",
+            "9/10",
+            "1/2",
+            "1/10",
+            "1/82",
+            "1/730",
+            "1/6562"
+          ],
+          "map_score_A_by_count": [
+            "1",
+            "1",
+            "1",
+            "1",
+            "1/2",
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "C": {
+          "mean_posterior_A_fraction": "1/2",
+          "information_bits_decimal": "0.7710929067550159034164699341471819754793957004471945279606700097698266",
+          "posterior_by_count": [
+            "6561/6562",
+            "729/730",
+            "81/82",
+            "9/10",
+            "1/2",
+            "1/10",
+            "1/82",
+            "1/730",
+            "1/6562"
+          ],
+          "map_score_A_by_count": [
+            "1",
+            "1",
+            "1",
+            "1",
+            "1/2",
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        }
+      },
+      "eig8": 0.7710929067550158,
+      "equal_prior_recovery": 0.929443359375
+    }
+  ],
+  "guard_valid": {
+    "guard_valid_heldout_0": {
+      "recovery_fraction": "10756096/43046721",
+      "recovery": 0.24987027467202438,
+      "mean_posterior_A": 0.19010170380744537,
+      "high_confidence": 0.5066941335671072,
+      "high_confidence_fraction": "7270507/14348907",
+      "binomial_mass": [
+        "65536/43046721",
+        "655360/43046721",
+        "2867200/43046721",
+        "7168000/43046721",
+        "11200000/43046721",
+        "11200000/43046721",
+        "7000000/43046721",
+        "2500000/43046721",
+        "390625/43046721"
+      ]
+    },
+    "guard_valid_heldout_1": {
+      "recovery_fraction": null,
+      "recovery": null,
+      "mean_posterior_A": 0.5,
+      "high_confidence": 0.7265625,
+      "high_confidence_fraction": "93/128",
+      "binomial_mass": [
+        "1/256",
+        "1/32",
+        "7/64",
+        "7/32",
+        "35/128",
+        "7/32",
+        "7/64",
+        "1/32",
+        "1/256"
+      ]
+    },
+    "guard_valid_heldout_2": {
+      "recovery_fraction": null,
+      "recovery": null,
+      "mean_posterior_A": 0.09100239954505736,
+      "high_confidence": 0.0,
+      "high_confidence_fraction": "0",
+      "binomial_mass": [
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    "guard_valid_heldout_3": {
+      "recovery_fraction": "0",
+      "recovery": 0.0,
+      "mean_posterior_A": 0.9624468241161801,
+      "high_confidence": 1.0,
+      "high_confidence_fraction": "1",
+      "binomial_mass": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1"
+      ]
+    },
+    "guard_valid_heldout_4": {
+      "recovery_fraction": "65536/390625",
+      "recovery": 0.16777216,
+      "mean_posterior_A": 0.1671193500389105,
+      "high_confidence": 1.0,
+      "high_confidence_fraction": "1",
+      "binomial_mass": [
+        "65536/390625",
+        "131072/390625",
+        "114688/390625",
+        "57344/390625",
+        "3584/78125",
+        "3584/390625",
+        "448/390625",
+        "32/390625",
+        "1/390625"
+      ]
+    },
+    "guard_valid_heldout_5": {
+      "recovery_fraction": "1/2",
+      "recovery": 0.5,
+      "mean_posterior_A": 0.5,
+      "high_confidence": 0.0,
+      "high_confidence_fraction": "0",
+      "binomial_mass": [
+        "65536/5764801",
+        "393216/5764801",
+        "147456/823543",
+        "221184/823543",
+        "207360/823543",
+        "124416/823543",
+        "46656/823543",
+        "69984/5764801",
+        "6561/5764801"
+      ]
+    }
+  },
+  "selected_x": "-1"
+}

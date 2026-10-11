@@ -1,0 +1,47 @@
+{
+  "scope": "Synthetic algorithmic unit baseline only; prescribed Bernoulli response models, no subjects, sessions, biological measurements or clinical claims. Parent NEURO-001 empirical question remains OPEN.",
+  "models": {
+    "A": "p(y=1|x)=(2+x)/4",
+    "B": "p(y=1|x)=(2+abs(x))/4",
+    "C_misspecified_truth": "p(y=1|x)=1/2; not a candidate"
+  },
+  "domain": "x in [-1,1]; all probabilities rational in [1/4,3/4]",
+  "selection_grid": [
+    "-1",
+    "-3/4",
+    "-1/2",
+    "-1/4",
+    "0",
+    "1/4",
+    "1/2",
+    "3/4",
+    "1"
+  ],
+  "selection": "Maximize single-response mutual information under equal A/B prior. Compute H((pA+pB)/2)-(H(pA)+H(pB))/2 in bits; smallest x for ties within1e-14. No realized evaluation responses used.",
+  "reference": "x=1/2, ordinary positive-domain agreement",
+  "evaluation": "Each design repeats one stimulus8times with independent Bernoulli responses. Exact binomial count probabilities for k=0..8; rational candidate likelihoods and posterior; MAP ties score1/2, no random tie break. Fresh simulated responses after selection; the selected x necessarily appears in evaluation, so this is response holdout, not stimulus-domain or subject holdout.",
+  "metrics": [
+    "exact A/B model recovery probability",
+    "eight-response expected information gain, bits",
+    "posterior mean and probability max posterior>=0.95 under each truth including out-of-family C",
+    "per-seed Monte Carlo recovery/proportion comparison to exact distribution"
+  ],
+  "simulation": "60 configurations=2designs*3truths*10seeds. 1000sequences/configuration,8draws/sequence =480000draws total. Seeds 10000+100*design_index+10*truth_index+seed_index with indexes0-based. Python random.Random and random()<float(p). Save binomial-count histograms (9counts/configuration), sufficient statistics for every metric, rather than individual responses.",
+  "acceptance": [
+    "All rational binomial masses sum exactly1; likelihood/posterior normalized; entropy quantities agree with independent reviewer within1e-12.",
+    "Ordinary-domain candidate predictions identical; exact recovery1/2 and EIG0. Identical-model negative control must also give0EIG and1/2recovery for every grid point.",
+    "Directional positive-control hypothesis: diagnostic exact equal-prior recovery exceeds ordinary by>=0.1. Record FAIL without retuning if false.",
+    "MC pooled estimates differ from exact targets by<=0.025 for each truth/design; descriptive numerical consistency only, not a biological significance test.",
+    "Invalid-input, probability, and tampered-result controls must reject. No output implies closed-set confidence is calibrated under C."
+  ],
+  "budget": {
+    "wall_minutes": 30,
+    "usd": 0,
+    "max_trial_configurations": 100,
+    "planned_simulation_configurations": 60,
+    "sequences": 60000,
+    "draws": 480000
+  },
+  "stop": "Stop on integrity failure, failed controls or30min. Preserve all attempted outputs. No adaptive threshold/model/grid changes.",
+  "limits": "No fitted models, model flexibility, ecological validity, real subjects, public empirical data, cross-subject replication, mechanistic exclusion, novelty or parent-question completion. This affine choice replaces an earlier unfrozen sigmoid sketch before admission; no model computation preceded this freeze."
+}

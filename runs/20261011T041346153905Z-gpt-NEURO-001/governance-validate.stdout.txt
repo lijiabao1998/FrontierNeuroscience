@@ -1,0 +1,1 @@
+PASS: 10 problem records; governance pin 9c3ae2dbaa1c consistent; paths registered. Metadata checks only, not proof of openness or discovery.

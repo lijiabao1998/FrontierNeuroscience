@@ -1,0 +1,8 @@
+{
+  "state": "PASS_FINITE_AUTHOR_TESTS",
+  "elapsed_seconds": 0.36415077799756546,
+  "cpu_seconds": 0.213266235,
+  "maxrss_kib": 13952,
+  "original_acceptance": "FAILED/INCOMPLETE",
+  "independent_validation": "PENDING_CURRENT_REVIEW"
+}
